@@ -1,7 +1,10 @@
 from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+app.config['DATABASE_URI'] = 'sqlite://///home/ivan/Projects/website/blog.db'
+db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
