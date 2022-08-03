@@ -22,6 +22,10 @@ def post():
 def add():
     return render_template('add.html')
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

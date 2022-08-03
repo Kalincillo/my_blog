@@ -189,18 +189,17 @@ body {
 header.masthead {
     margin-bottom: 50px;
     background: no-repeat center center;
-    /*background-color: #777;*/
-    background-color: black;
+    background: linear-gradient(black, #c2a975);
     background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover;
 }
 
 header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
     padding: 200px 0 150px;
-    color: #FFDC00;
+    color: darkslategrey;
 }
 
 @media only screen and (min-width: 768px) {
@@ -219,7 +218,7 @@ header.masthead .page-heading h1, header.masthead .site-heading h1 {
 }
 
 header.masthead .page-heading .subheading, header.masthead .site-heading .subheading {
-    font-size: 24px;
+    font-size: 240px;
     font-weight: 300;
     line-height: 1.1;
     display: block;
