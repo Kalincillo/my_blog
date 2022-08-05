@@ -9,6 +9,14 @@
     <meta name="author" content="">
 
     <title>Clean Blog - Start Bootstrap Theme</title>
+{#    <style>#}
+{#        body#}
+{#        {#}
+{#         background-repeat: no-repeat;#}
+{#            background-attachment: fixed;#}
+{#            background-size: cover;#}
+{#        }#}
+{#    </style>#}
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
@@ -23,7 +31,7 @@
 
   </head>
 
-  <body>
+  <body style="background-image: url({{ url_for('static', filename='Ivan.jpg') }})">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background: linear-gradient(15deg, black, #c2a975, black);">
@@ -53,16 +61,16 @@
     </nav>
 
     <!-- Page Header -->
-{#    <header class="masthead">#}
-{#      <div class="container">#}
-{#        <div class="row">#}
-{#          <div class="col-lg-8 col-md-10 mx-auto">#}
-{#            <div class="site-heading">#}
-{#            </div>#}
-{#          </div>#}
-{#        </div>#}
-{#      </div>#}
-{#    </header>#}
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Main Content -->
     <div class="container">
