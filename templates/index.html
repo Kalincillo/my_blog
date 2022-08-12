@@ -9,14 +9,6 @@
     <meta name="author" content="">
 
     <title>Clean Blog - Start Bootstrap Theme</title>
-{#    <style>#}
-{#        body#}
-{#        {#}
-{#         background-repeat: no-repeat;#}
-{#            background-attachment: fixed;#}
-{#            background-size: cover;#}
-{#        }#}
-{#    </style>#}
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
@@ -97,13 +89,45 @@
     <hr>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
-          </div>
-        </div>
+    <footer class="text-center" style="background: linear-gradient(15deg, black, #c2a975, black)">
+      <div class="container p-4 pb-0">
+        <section class="mb--4">
+            <!-- LinkedIn -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"><i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Github -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"><i class="fab fa-github"></i>
+            </a>
+            <!-- Youtube -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #c4302b;"
+              href="#!"
+              role="button"><i class="fab fa-youtube"></i>
+            </a>
+            <!-- Facebook -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"><i class="fab fa-facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #55ACEE;"
+              href="#!"
+              role="button"><i class="fab fa-twitter"></i>
+            </a>
+        </section>
       </div>
     </footer>
 
