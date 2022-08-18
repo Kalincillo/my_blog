@@ -9,10 +9,9 @@
     <meta name="author" content="">
 
     <title>Clean Blog - Start Bootstrap Theme</title>
-{   <!-- font-awesome kit -->
-{#    <script src="https://kit.fontawesome.com/388052538e.js" crossorigin="anonymous"></script>#}
+
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="{{ url_for('static', filename='all.css') }}" rel="stylesheet" type="text/css">
@@ -24,7 +23,7 @@
 
   </head>
 
-  <body style="background-image: url({{ url_for('static', filename='Ivan.jpg') }})">
+  <body style="background-image: url( {{ url_for('static', filename='Ivan.jpg') }})">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background: linear-gradient(15deg, black, #c2a975, black);">
@@ -92,7 +91,7 @@
     <!-- Footer -->
     <footer class="text-center" style="background: linear-gradient(15deg, black, #c2a975, black)">
       <div class="container p-4 pb-0">
-        <section class="mb--4">
+        <section class="mb-4">
             <!-- LinkedIn -->
             <a
               class="btn btn-primary btn-floating m-1"
@@ -135,7 +134,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Custom scripts for this template -->
     <script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
