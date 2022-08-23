@@ -380,6 +380,23 @@ form .form-group:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
+.logo {
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+    /*box-shadow: 0px 0px 25px rgb(207, 207, 207);*/
+    height: 78px;
+
+}
+
+.content > img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    /*padding: 10px;*/
+    margin: 0px auto;
+}
+
 footer {
     position: absolute;
     bottom: 0;
