@@ -22,10 +22,17 @@ def post():
 def add():
     return render_template('add.html')
 
+@app.route('/music')
+def music():
+    return render_template('music.html')
+
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -36,16 +36,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('index') }}">Projects</a>
+              <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('about') }}">Music</a>
+              <a class="nav-link" href="{{ url_for('music') }}">Music</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('add') }}">About</a>
+              <a class="nav-link" href="{{ url_for('about') }}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('add') }}">Contact</a>
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
             </li>
           </ul>
         </div>
@@ -90,8 +90,9 @@
 
     <!-- Footer -->
     <footer class="text-center" style="background: linear-gradient(15deg, black, #c2a975, black)">
-      <div class="container p-4 pb-0 row">
-        <div class="text-white col-8 text-start">
+      <!-- Contact -->
+      <div class="container-fluid p-4 pb-0 row footer-margin">
+        <div class="text-white col-3 text-start">
           <strong>
               CONTACT
           </strong>
@@ -101,7 +102,11 @@
             </span>
           </div>
         </div>
-        <section class="col mb-4">
+        <!-- Logo -->
+        <div class="content col-6">
+          <img src="/static/max.jpg">
+        </div>
+        <section class="col-3 mb-4">
             <!-- LinkedIn -->
             <a
               class="btn btn-primary btn-floating m-1"
