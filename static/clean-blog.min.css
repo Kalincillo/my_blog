@@ -16,6 +16,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     padding-bottom: 200px;
+    padding-top: 150px;
 }
 
 p {
