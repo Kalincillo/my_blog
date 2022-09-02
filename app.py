@@ -26,9 +26,17 @@ def music():
 def projects():
     return render_template('projects.html')
 
-@app.route('/projects_page')
-def projects_page():
-    return render_template('projects_page.html')
+
+
+@app.route('/hardware')
+def hardware():
+    return render_template('hardware.html')
+
+
+@app.route('/software')
+def software():
+    return render_template('software.html')
+
 
 
 @app.route('/contact')
