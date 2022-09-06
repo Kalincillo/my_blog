@@ -124,10 +124,35 @@ body {
     text-transform: uppercase
 }
 
+@media only screen and (max-width: 1199px) {
+    audio {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    audio {
+        width: 145px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    audio {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    audio {
+        width: 50px;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     #mainNav {
         background: 0 0
     }
+
 
     #mainNav .navbar-brand {
         padding: 15px 20px;
@@ -489,6 +514,11 @@ footer .copyright {
 }
 
 .button-color {
-    background-color: #c2a975;
+    background: linear-gradient(15deg, black, #c2a975, black);
+}
+
+.jumbo {
+    object-fit: cover;
+
 }
 
