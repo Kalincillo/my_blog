@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
   {% block head %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>{% block title %}{% endblock %}MY BLOG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}{% endblock %}MY BLOG</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="{{ url_for('static', filename='all.css') }}" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='all.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link
+      href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+      rel='stylesheet' type='text/css'>
 
-  <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='clean-blog.min.css') }}" rel="stylesheet">
-{% endblock %}
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='clean-blog.min.css') }}" rel="stylesheet">
+  {% endblock %}
 </head>
 <body style="background-image: url( {{ url_for('static', filename='Ivan2.jpg') }})">
 <!-- Navigation -->
@@ -69,8 +69,8 @@
 <!-- Main Content -->
 <div class="container">
   <div class="row">
-  {% block content %}
-  {% endblock %}
+    {% block content %}
+    {% endblock %}
   </div>
 </div>
 
@@ -99,7 +99,7 @@
       <a
         class="btn btn-primary btn-floating m-1"
         style="background-color: #0082ca;"
-        href="#!"
+        href="https://www.linkedin.com/in/oscar-ivan-de-la-cruz-perez-57bab01ab" target="_blank"
         role="button"><i class="fab fa-linkedin"></i>
       </a>
       <!-- Github -->
@@ -115,13 +115,6 @@
         style="background-color: #c4302b;"
         href="https://www.youtube.com/user/kalincillo" target="_blank"
         role="button"><i class="fab fa-youtube"></i>
-      </a>
-      <!-- Facebook -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #3b5998;"
-        href="#!"
-        role="button"><i class="fab fa-facebook"></i>
       </a>
       <!-- Twitter -->
       <a
