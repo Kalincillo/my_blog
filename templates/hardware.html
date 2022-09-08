@@ -1,177 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>MY BLOG</title>
+{% extends "base.html" %}
 
-  <!-- Bootstrap core CSS -->
-  <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="{{ url_for('static', filename='all.css') }}" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
-
-  <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='clean-blog.min.css') }}" rel="stylesheet">
-
-</head>
-<body style="background-image: url( {{ url_for('static', filename='Ivan2.jpg') }})">
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"
-     style="background: linear-gradient(15deg, black, #c2a975, black);">
-  <div class="container">
-    <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="{{ url_for('projects') }}">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('music') }}">Music</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('about') }}">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-        </li>
-      </ul>
+{% block content %}
+  <!-- Main Content -->
+  <!-- Gallery -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Guitar Overdrive</h5>
+          <p class="card-text"> Custom made guitar overdrive pedal inspired in two iconic
+            vintage pedal</p>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-
-<!-- Page Header -->
-<header class="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="site-heading">
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Electronic White Cane</h5>
+          <p class="card-text">Electronic white cane for blind people with a
+            headphone and vibratory motor</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Drummer rudiment practicer</h5>
+          <p class="card-text">Electronic device to see how the rudiment should
+            goes with a visual lights</p>
         </div>
       </div>
     </div>
   </div>
-</header>
+  <!-- Gallery -->
 
-<!-- Main Content -->
-<!-- Gallery -->
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Guitar Overdrive</h5>
-        <p class="card-text"> Custom made guitar overdrive pedal inspired in two iconic
-          vintage pedal</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Electronic White Cane</h5>
-        <p class="card-text">Electronic white cane for blind people with a
-          headphone and vibratory motor</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Drummer rudiment practicer</h5>
-        <p class="card-text">Electronic device to see how the rudiment should
-          goes with a visual lights</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery -->
-
-
-<!-- Footer -->
-<footer class="text-center" style="background: linear-gradient(15deg, black, #c2a975, black)">
-  <!-- Contact -->
-  <div class="container-fluid p-4 pb-0 row footer-margin">
-    <div class="text-white col-3 text-start">
-      <strong>
-        CONTACT
-      </strong>
-      <div>
-            <span style="font-size: 15px">
-              oscar_delacruz19@hotmail.com
-            </span>
-      </div>
-    </div>
-    <!-- Logo -->
-    <div class="content col-6">
-      <img src="/static/max.jpg">
-    </div>
-    <section class="col-3 mb-4">
-      <!-- LinkedIn -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #0082ca;"
-        href="#!"
-        role="button"><i class="fab fa-linkedin"></i>
-      </a>
-      <!-- Github -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #333333;"
-        href="#!"
-        role="button"><i class="fab fa-github"></i>
-      </a>
-      <!-- Youtube -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #c4302b;"
-        href="#!"
-        role="button"><i class="fab fa-youtube"></i>
-      </a>
-      <!-- Facebook -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #3b5998;"
-        href="#!"
-        role="button"><i class="fab fa-facebook"></i>
-      </a>
-      <!-- Twitter -->
-      <a
-        class="btn btn-primary btn-floating m-1"
-        style="background-color: #55ACEE;"
-        href="#!"
-        role="button"><i class="fab fa-twitter"></i>
-      </a>
-    </section>
-  </div>
-  <div class="text-center p-2 text-white" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2022 Copyright
-  </div>
-</footer>
-
-<!-- Bootstrap core JavaScript -->
-<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='popper.min.js') }}"></script>
-<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
-        integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Custom scripts for this template -->
-<script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
-
-</body>
-</html>
+{% endblock %}

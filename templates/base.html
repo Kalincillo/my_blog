@@ -9,10 +9,10 @@
     <title>{% block title %}{% endblock %}MY BLOG</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="{{ url_for('static', filename='all.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/all.css') }}" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
           type='text/css'>
     <link
@@ -20,10 +20,10 @@
       rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='clean-blog.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
   {% endblock %}
 </head>
-<body style="background-image: url( {{ url_for('static', filename='Ivan2.jpg') }})">
+<body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"
      style="background: linear-gradient(15deg, black, #c2a975, black);">
