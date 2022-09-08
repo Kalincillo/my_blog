@@ -92,7 +92,7 @@
     </div>
     <!-- Logo -->
     <div class="content col-6">
-      <img src="/static/max.jpg">
+      <img src="{{ url_for('static', filename='/images/max.jpg') }}">
     </div>
     <section class="col-3 mb-4">
       <!-- LinkedIn -->
@@ -131,14 +131,14 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='popper.min.js') }}"></script>
-<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
         integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Custom scripts for this template -->
-<script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
 
 </body>
 
