@@ -77,10 +77,10 @@
 <hr>
 
 <!-- Footer -->
-<footer class="text-center" style="background: linear-gradient(15deg, black, #c2a975, black)">
-  <!-- Contact -->
+<footer class="text-center container-fluid" style="background: linear-gradient(15deg, black, #c2a975, black)">
   <div class="p-4 pb-0 row">
-    <div class="text-white col-3 text-start">
+    <!-- Contact -->
+    <div class="text-white col-lg-3 text-lg-start col-md-12 text-md-center">
       <strong>
         CONTACT
       </strong>
@@ -91,10 +91,10 @@
       </div>
     </div>
     <!-- Logo -->
-    <div class="content col-6">
+    <div class="content col-lg-6 justify-content-lg-start">
       <img src="{{ url_for('static', filename='/images/max.jpg') }}">
     </div>
-    <section class="col-3 mb-4">
+    <section class="col-lg-3 mb-4 justify-content-lg-end">
       <!-- LinkedIn -->
       <a
         class="btn btn-primary m-1 btn_adjust"
