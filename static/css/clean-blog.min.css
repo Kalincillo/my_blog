@@ -414,11 +414,11 @@ form .form-group:first-child .floating-label-form-group {
 
 
 .content > img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 80px;
     display: block;
     margin: 0px auto;
-    border-radius: 50%;
+    /*border-radius: ;*/
 }
 
 footer {
