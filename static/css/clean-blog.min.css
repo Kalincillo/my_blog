@@ -535,3 +535,7 @@ footer .copyright {
 
 }
 
+#project-title > * a {
+    text-decoration: none;
+}
+

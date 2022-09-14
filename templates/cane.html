@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1 class="display-2 text-white">
+        White cane
+      </h1>
+      <a class="text-white" href="{{ url_for('static', filename='files/cane.c') }}" download>
+        download cane.c
+      </a>
+    </div>
+  </div>
+
+
+{% endblock %}

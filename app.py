@@ -43,6 +43,10 @@ def software():
 def contact():
     return render_template('contact.html')
 
+@app.route('/cane')
+def cane():
+    return render_template('cane.html')
+
 
 
 if __name__ == '__main__':
