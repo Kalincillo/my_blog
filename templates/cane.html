@@ -2,13 +2,59 @@
 
 {% block content %}
   <div class="container">
-    <div class="row">
+    <div class="row project-text">
       <h1 class="display-2 text-white">
         White cane
       </h1>
-      <a class="text-white" href="{{ url_for('static', filename='files/cane.c') }}" download>
-        download cane.c
-      </a>
+      <h3 class="text-white">
+        Background
+      </h3>
+      <p class="text-white project-text">
+        Since ancient times, blind people have sought different ways to overcome their limitations, but it was not until
+        1921 that José Mario Fallótico, in Buenos Aires, Argentina, discovered that the use of a white cane would serve
+        to distinguish him and thus be able to help him; only that José Fallotic never patented his invention, and it
+        was the American George Benham, president of the Illinois Lions Club, who later proposed a white cane with a red
+        lower end for use by the visually impaired, so that they would be given priority step, his proposal was accepted
+        and in a short time the use of this element became universal. Interestingly, Americans celebrate "International
+        White Cane Day" on October 15, but without knowing who its inventor really was.
+        Currently, the cane has become for the blind an extension of their body. Something like an external organ that
+        makes up for his visual deficiencies, providing him with information while he moves the pointer with the ground,
+        since it emits vibrations that are perceived by the user, these vibrations vary their intensity according to the
+        circumstances of the surface, they are they exacerbate when it presents greater hardness, allowing you to
+        interpret the exact situation in which you find yourself. This sensory tool guides the steps of the blind,
+        allowing them to perceive the type of surface they are walking on and at the same time providing information
+        about their context and location within it.
+        There are currently different models of walking sticks on the market, each of which has a different type of
+        grip. Their design is one or the other depending on the service they are intended to provide, depending on the
+        degree of blindness of the user. Thus, the B1 model is designed to guide the totally blind, the B2, those who
+        slightly distinguish between light and shadow, and finally the B3 guides the steps of the blind who still have
+        some residual vision.
+        However, I believe that there is still much to be done, and it would be very useful for the blind person to
+        receive more information, such as a cane implemented with electronic accessories.
+      </p>
+      <table class="table table-dark table-striped">
+        <thead>
+        <tr>
+          <th>File</th>
+          <th>Download</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            cane.c
+          </td>
+          <td>
+            <a
+              class="btn btn-primary m-1"
+              href="{{ url_for('static', filename='files/cane.c') }}" download
+              role="button"><i class="fa fa-file-download"></i>
+            </a>
+          </td>
+        </tr>
+        </tbody>
+
+      </table>
     </div>
   </div>
 
