@@ -18,7 +18,7 @@ body {
     padding-bottom: 200px;
     padding-top: 150px;
     background-color: black;
-    background-image: url({{);
+
 }
 
 p {
@@ -543,4 +543,9 @@ footer .copyright {
 .project-text{
     text-align: justify;
     margin: 0;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
 }

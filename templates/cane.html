@@ -89,6 +89,58 @@
         <strong>Chapter VI</strong> There are specifications to take into consideration for the correct use of the
         prototype.
       </div>
+      <section class="text-white">
+        <h1 class="text-center mt-3 text-uppercase">Chapter I. Description</h1>
+        <h3 class="mt-4">1.1 General operation</h3>
+        <p>It is a cane implemented with sensors that will be able to warn the blind that there is an obstacle before
+          making physical contact with it, this will be achieved through small vibrations in the handle of the cane that
+          will increase as you get closer to the obstacle and through a voice that will will indicate the distance of
+          such an object.
+        </p>
+        <h3 class="mt-3">1.2 Block diagram</h3>
+        <img src="{{ url_for('static', filename='images/block_diagram.jpg') }}" class="project-img mt-3">
+        <h5 class="mt-4">1.2.1 Power supply</h5>
+        <p class="mt-0">In this stage of the circuit, a high-performance 9-volt battery will be implemented to power all
+          the stages
+          of the circuit and the motors.</p>
+        <h5>1.2.2 Load control</h5>
+        <p class="mt-0">In this stage, the power supply to the different parts of the circuit is controlled since they
+          work with
+          different voltages such as sensors, motors, circuits, etc.</p>
+        <h5>1.2.3 Proximity sensor</h5>
+        <p class="mt-0">This stage is the one in charge of sending the signal depending on the distance with which the
+          vibrator will
+          work, since the closer the lens of the proximity sensor is, the greater the frequency with which the signal
+          will bounce and in this way it is intended to convert this signal so that the vibration motor also works at a
+          higher speed and in the case of voice memory to make changes in the phrases.</p>
+        <h5>1.2.4 Microcontroller</h5>
+        <p class="mt-0">The microcontroller is the one in charge of sending pulses and receiving the signal coming from
+          the sensor
+          and from there sending it to the output of P1 to be converted by a DAC (Digital to Analog Converter) and sent
+          to the vibration motor. If this stage is not done it will be very difficult to make it work at the desired
+          speed.
+          It is also responsible for controlling the voice memory of the signals that are going to be sent to it.</p>
+        <h5>1.2.5 DAC</h5>
+        <p class="mt-0">In this stage it is intended to convert the signal coming from the microcontroller so that the
+          motor can work
+          depending on the frequency that is being sent by the sensors, having this a minimum point to start with a
+          small vibration being about 2 meters from the obstacle until a maximum point. with a constant vibration when
+          you are very close to the obstacle.</p>
+        <h5>1.2.6 Power stage</h5>
+        <p class="mt-0">In this stage, what is intended is that the signal obtained from the DAC has a higher power so
+          that the circuit can support the vibrating motors.</p>
+        <h5>1.2.7 Vibration motor</h5>
+        <p class="mt-0">In this stage is where the converted signal arrives to be able to have a speed control that
+          depends on the frequency that the sensor is working, which is then converted to a voltage that will increase
+          as the frequency that it sends increases, once converted into the DAC.</p>
+        <h5>1.2.8 Voice memory</h5>
+        <p class="mt-0">This stage receives a signal from the microcontroller that, depending on the signal sent by the micro, is the
+          phrase that is going to be said.</p>
+      </section>
+      <section class="text-white">
+        <h1 class="text-center mt-3 text-uppercase">Chapter II. Analysis and design</h1>
+
+      </section>
       <table class="table table-dark table-striped mt-5">
         <thead>
         <tr>
