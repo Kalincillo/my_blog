@@ -92,7 +92,8 @@
       <section class="text-white">
         <h1 class="text-center mt-3 text-uppercase">Chapter I. Description</h1>
         <h3 class="mt-4">1.1 General operation</h3>
-        <p>It is a cane implemented with sensors that will be able to warn the blind that there is an obstacle before
+        <p class="mt-0">It is a cane implemented with sensors that will be able to warn the blind that there is an
+          obstacle before
           making physical contact with it, this will be achieved through small vibrations in the handle of the cane that
           will increase as you get closer to the obstacle and through a voice that will will indicate the distance of
           such an object.
@@ -134,11 +135,49 @@
           depends on the frequency that the sensor is working, which is then converted to a voltage that will increase
           as the frequency that it sends increases, once converted into the DAC.</p>
         <h5>1.2.8 Voice memory</h5>
-        <p class="mt-0">This stage receives a signal from the microcontroller that, depending on the signal sent by the micro, is the
+        <p class="mt-0">This stage receives a signal from the microcontroller that, depending on the signal sent by the
+          micro, is the
           phrase that is going to be said.</p>
       </section>
       <section class="text-white">
         <h1 class="text-center mt-3 text-uppercase">Chapter II. Analysis and design</h1>
+        <h3 class="mt-4">2.1 Stages</h3>
+        <h5 class="mt-4">2.1.1 Power supply</h5>
+        <p class="mt-0">Input power is 9 volts and is provided by a high performance battery that is small and portable
+          which is why
+          that type of battery was chosen.</p>
+        <h5>2.1.2 Load control</h5>
+        <p class="mt-0">This stage is carried out by means of voltage regulators to power the different stages of the
+          circuit such as
+          sensors, integrated circuits and motors, which are the ones that consume the most, reaching the conclusion of
+          a 7805 regulator.</p>
+        <h6>7805 Regulator</h6>
+        <img src="{{ url_for('static', filename='/images/projects/regulator.jpg') }}" class="project-img">
+        <h5 class="mt-4">2.1.3 Proximity sensor</h5>
+        <p class="mt-0">The sensors to be used are the SRF05, the proximity sensors generate pulses that are put into
+          the micro,
+          which is the one in charge of making the conversion to centimeters. That pulse is a 40KHz burst which is
+          received by the receiving sensor.</p>
+        <h6>Ultrasonic sensor SRF05</h6>
+        <img src="{{ url_for('static', filename='/images/projects/sensor.jpg') }}" class="project-img">
+        <h6 class="mt-3">Sensor parameters</h6>
+        <img src="{{ url_for('static', filename='/images/projects/sensor_inf.jpg') }}" class="project-img">
+        <h6 class="mt-3">transmitter</h6>
+        <p class="mt-0">The transmitter is built with a 555 and CMOS inverters, the CMOS feature is used to parallel
+          them and
+          increase the transmit power. The signal coupled between the positive and negative terminals is 180º out of
+          phase, so the voltage applied between the terminals is doubled.</p>
+        <img src="{{ url_for('static', filename='/images/projects/transmitter.jpg') }}" class="project-img">
+        <h6 class="mt-3">receiver</h6>
+        <p class="mt-0">The receiver is composed of two circuits: signal amplifier and detection circuit. The signal is
+          received by
+          the receiving sensor and amplified 1000 times (60dB) in two steps: one amplifier times 100 (40dB) and one
+          amplifier times 10 (20dB).</p>
+        <img src="{{ url_for('static', filename='/images/projects/receiver.jpg') }}" class="project-img">
+        <h6 class="mt-3">Signal detector</h6>
+        <p class="mt-0">The signal detector consists of a half bridge rectifier and a comparator. The comparison voltage
+          is set to 0.045Vdc.</p>
+        <img src="{{ url_for('static', filename='/images/projects/signal_detector.jpg') }}" class="project-img">
 
       </section>
       <table class="table table-dark table-striped mt-5">
