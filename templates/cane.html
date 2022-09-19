@@ -178,7 +178,42 @@
         <p class="mt-0">The signal detector consists of a half bridge rectifier and a comparator. The comparison voltage
           is set to 0.045Vdc.</p>
         <img src="{{ url_for('static', filename='/images/projects/signal_detector.jpg') }}" class="project-img">
-
+        <h5 class="mt-4">2.1.5 Microcontroller</h5>
+        <p class="mt-0">This stage will control the motors through port 1. When an obstacle approaches, it will send a
+          one or a zero to the outputs, and port 2 will send, as with the motors, a digital signal that, depending on
+          the value, will call the saved message, the memory manufacturer's data sheet must be taken into account to see
+          the maximum recording time.</p>
+        <img src="{{ url_for('static', filename='/images/projects/microcontroller.jpg') }}" class="project-img">
+        <h5 class="mt-4">2.1.5 DAC</h5>
+        <p class="mt-0">This stage was designed by means of the digital output sent by the micro and depending on the
+          output bits, this stage will transform each digital signal into an output voltage. The DAC that was used was
+          the r-2r with resistance values of 470 Ohms for r and 1KOhm for 2r.</p>
+        <img src="{{ url_for('static', filename='/images/projects/dac.jpg') }}" class="project-img">
+        <h5 class="mt-4">2.1.6 Load stage</h5>
+        <p class="mt-0">This stage is made up of a voltage follower and a current amplifier, this was done because what
+          the DAC commands does not raise the motors and with this stage they can be raised. The Operational to be used
+          was the LM358N since it occupies a single source and the transistor to use was the TIP41C since it is a power
+          transistor and can easily withstand vibrating motors.</p>
+        <h5>2.1.7 Vibration motor</h5>
+        <p class="mt-0">This is one of the final stages in which the input voltage that the motors will receive
+          depending on the
+          distance was designed.</p>
+        <img src="{{ url_for('static', filename='/images/projects/vibration_dac.jpg') }}" class="project-img">
+        <h5 class="mt-4">2.1.8 Voice memory</h5>
+        <p class="mt-0">In this stage of the voice memory, through the microcontroller, different outputs to the memory
+          were designed in which they depend on the distance of an object, in which the output of the voice memory must
+          be connected to a speaker or , in this case, to a female plug for playback on headphones.
+          This voice memory handles several modalities in which one of them is to work in addressing mode, which
+          consists of recording the voice, indicating binary numbers to the inputs, which was the one used for this
+          project.</p>
+        <img src="{{ url_for('static', filename='/images/projects/voice_memory.jpg') }}" class="project-img">
+        <h5 class="mt-4">Design for voice memory</h5>
+        <p class="mt-0">Audio recorder distances</p>
+        <img src="{{ url_for('static', filename='/images/projects/voice_dac.jpg') }}" class="project-img">
+      </section>
+      <section class="text-white">
+        <h1 class="text-center mt-5 text-uppercase">Chapter III. Programming.</h1>
+        <h3 class="mt-3">3.1 Algorithm</h3>
       </section>
       <table class="table table-dark table-striped mt-5">
         <thead>
