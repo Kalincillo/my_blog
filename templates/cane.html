@@ -307,17 +307,69 @@
         <h5 class="mt-4">1000 Output</h5>
         <img src="{{ url_for('static', filename='/images/projects/output_2.jpg') }}" class="project-img">
         <h5 class="mt-4">4.1.5 Power stage</h5>
-        <p class="mt-0">At this stage, we experimented with connecting the motors and sending the DAC ones and zeros for the
+        <p class="mt-0">At this stage, we experimented with connecting the motors and sending the DAC ones and zeros for
+          the
           conversion and checking that the motors worked.</p>
         <h5>4.1.6 Vibration motors</h5>
-        <p class="mt-0">Here, the vibrating motors were experimented with, checking their operation from a very small vibration to a
+        <p class="mt-0">Here, the vibrating motors were experimented with, checking their operation from a very small
+          vibration to a
           high frequency that could be varied by regulating the voltage of the motors with a maximum of 5 volts and with
           a minimum to start operating of approximately 2 volts. .</p>
         <h5>4.1.7 Voice memory</h5>
-        <p class="mt-0">At this stage, the first thing that was done, once the circuit for the voice memory was assembled, was to
+        <p class="mt-0">At this stage, the first thing that was done, once the circuit for the voice memory was
+          assembled, was to
           make the recording, an address is entered and it is recorded, leaving the Chip Enable button pressed and so on
           in the addresses that were occupied, to To verify it, the switch was put into playback and the addresses were
           entered with ones and zeros and thus checking if what was entered at that address was what was reproduced.</p>
+      </section>
+      <section class="text-white">
+        <h1 class="text-uppercase text-center mt-5">Chapter V. Construction</h1>
+        <h3 class="mt-3">5.1 Design and Elaboration of Printed Circuits</h3>
+        <p>Once the experimentation were finished, the Eagle designs of the printed circuits were carried out.</p>
+        <p>Next, the processes of the elaboration of the printed circuits will be described:</p>
+        <h5>5.1.1 Software design</h5>
+        <p class="mt-0">The program for developing the print on the copper plate was made by the Eagle Layout 5.6
+          program.</p>
+        <ol class="ps-5">
+          <li>The first step is to name the folder where the files will be saved
+            <img src="{{ url_for('static', filename='/images/projects/eagle.jpg') }}" class="project-img">
+          </li>
+          <li>Once the folder was made, the schematic was made first, once the schematic was finished, it was passed to
+            “board”
+          </li>
+          <li>Then the components were arranged and in the end the yellow lines were joined by tracks.</li>
+        </ol>
+        <h5>5.1.2 Copper Tablet Design</h5>
+        <p class="mt-0">The method used to transfer the circuits to the board was using Couché paper:</p>
+        <ol>
+          <li>First, the copper bakelite board is cleaned
+            <img src="{{ url_for('static', filename='/images/projects/pcb.jpg') }}" class="project-img">
+          </li>
+          <li>The circuit is printed on the Couché paper</li>
+          <li>Once printed, the ironing begins. First, align the paper with the plate, do not cut the baking sheet yet,
+            since it is very difficult to keep it from moving when ironing.
+          </li>
+          <li>Heat the iron to a little more than half and put it on the paper firmly, not moving the paper is very
+            important. 2 or 3 passes is enough. If the iron is very hot or you pass over it many times, the tracks are
+            deformed or the copper is raised.
+          </li>
+          <li>Check that all the tracks are stuck, one way is to look at the plate against the light in which you will
+            see that where there is a track it is very bright
+          </li>
+          <li>Then let the copper bakelite board cool with the paper for a few minutes and then put it in a container
+            with water for
+            10 minutes.
+          </li>
+          <li>Then with the tip of a finger the paper is removed.</li>
+          <li>With a rag you can remove what is missing from the paper</li>
+          <li>Once done, cut the copper bakelite board</li>
+          <li>Then the circuit is put into the Ferric Chloride in a container with a trickle of water, shaking it until
+            the remaining copper disappears.
+          </li>
+          <li>Once the copper bakelite board is left, the toner is removed with the blue eraser like this</li>
+        </ol>
+
+
       </section>
     </div>
   </div>
