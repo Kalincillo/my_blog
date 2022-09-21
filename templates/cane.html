@@ -260,9 +260,64 @@
         <p class="mt-0">At this stage, different voltage regulators were experimented with, each one for the different
           components of the circuit that work with different voltages, all this taken from the 9v battery, leading to
           the conclusion of the 7805 regulator for the 5v components (Microcontroller, Sensors, Memory of voice).</p>
-        <h5>Regulator output voltage</h5>
+        <h5 class="mt-4">Regulator output voltage</h5>
         <img src="{{ url_for('static', filename='/images/projects/regulator_output.jpg') }}" class="project-img">
-
+        <h5 class="mt-4">Microcontroller voltage</h5>
+        <img src="{{ url_for('static', filename='/images/projects/mic_output.jpg') }}" class="project-img">
+        <h5 class="mt-4">Sensors voltage</h5>
+        <img src="{{ url_for('static', filename='/images/projects/sensors_output.jpg') }}" class="project-img">
+        <h5 class="mt-4">4.1.2 Proximity sensor</h5>
+        <p class="mt-0">In this stage, some ultrasonic sensors were carried out, in which at the beginning they had been
+          designed
+          with the transmitter and the receiver but seeing that it gave us the signal with a lot of noise, it was
+          decided to change for a manufactured one (SRF05) reducing the space. In the sensors there were 2 ways to use
+          the first was through two pins, one for the input and the other for the output and the second was for a single
+          pin in which the inputs and outputs are inserted in the same pin. With this connection the sensor uses a
+          single microcontroller line for Echo and Trigger. Care must be taken to configure the microcontroller line as
+          input or output, as appropriate at any given time.</p>
+        <ol class="ps-5">
+          <li>Configure the Echo/Trigger pin as an output.</li>
+          <li>Apply a pulse of at least 10us to the Echo/Trigger pin.</li>
+          <li>Configure the Echo/Trigger pin as input.</li>
+          <li>The module transmits a pulse train of 8 cycles at 40KHz.</li>
+          <li>Wait for the Echo/Trigger pin to go to level “1”.</li>
+          <li>Initialize to zero and start the Timer.</li>
+          <li>When the receiving capsule receives the signal bounced off an object, the Echo/Trigger pin goes back to
+            level “0”.
+          </li>
+          <li>Measure the duration of the pulse of this signal, that is, the time in which the Echo/Trigger pin remains
+            at "1".
+          </li>
+          <li>Calculate the distance value based on the recorded time.</li>
+        </ol>
+        <h5>Time diagram SRF05</h5>
+        <img src="{{ url_for('static', filename='/images/projects/time_sensor.jpg') }}" class="project-img">
+        <h5 class="mt-4">4.1.3 Microcontroller</h5>
+        <p class="mt-0">In this stage, a program was first designed for the operation of the ultrasonic sensors, later
+          the converter program was designed in which depending on the distance at which the sensors are located, which
+          is proportional to a frequency with this, it was converted into a signal of output giving it in centimeters to
+          be able to be interpreted by a DAC and thus have a distance to voltage converter, and all the control of the
+          motors and voice memory was done.</p>
+        <h5>4.1.4 DAC</h5>
+        <p class="mt-0">In this stage, experiments were carried out with a converter circuit from 1 to 5 volts, which is
+          the voltage range with which the vibrating motors work from the minimum to the maximum vibration without being
+          damaged. Two tests were done, one at a very close distance and the other not so close.</p>
+        <h5>1111 Output</h5>
+        <img src="{{ url_for('static', filename='/images/projects/output_1.jpg') }}" class="project-img">
+        <h5 class="mt-4">1000 Output</h5>
+        <img src="{{ url_for('static', filename='/images/projects/output_2.jpg') }}" class="project-img">
+        <h5 class="mt-4">4.1.5 Power stage</h5>
+        <p class="mt-0">At this stage, we experimented with connecting the motors and sending the DAC ones and zeros for the
+          conversion and checking that the motors worked.</p>
+        <h5>4.1.6 Vibration motors</h5>
+        <p class="mt-0">Here, the vibrating motors were experimented with, checking their operation from a very small vibration to a
+          high frequency that could be varied by regulating the voltage of the motors with a maximum of 5 volts and with
+          a minimum to start operating of approximately 2 volts. .</p>
+        <h5>4.1.7 Voice memory</h5>
+        <p class="mt-0">At this stage, the first thing that was done, once the circuit for the voice memory was assembled, was to
+          make the recording, an address is entered and it is recorded, leaving the Chip Enable button pressed and so on
+          in the addresses that were occupied, to To verify it, the switch was put into playback and the addresses were
+          entered with ones and zeros and thus checking if what was entered at that address was what was reproduced.</p>
       </section>
     </div>
   </div>
