@@ -3,14 +3,13 @@
 {% block content %}
   <!-- Main Content -->
   <!-- Gallery -->
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="row row-cols-1 row-cols-md-2 g-4" id="project-title">
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="{{ url_for('static', filename='images/projects/quixote.png') }}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Auto parts database</h5>
-          <p class="card-text">Database created to hel a workshop to manage their e commerce
-            auto parts</p>
+          <h5 class="card-title text-black">Don Quixote WordCloud</h5>
+          <p class="card-text text-white mt-0">Word cloud created with the spanish version of Don Quixote</p>
         </div>
       </div>
     </div>
@@ -18,8 +17,8 @@
       <div class="card">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Auto fill GUI</h5>
-          <p class="card-text">App created to help in the efficiency in a governmental
+          <h5 class="card-title text-black">Auto fill GUI</h5>
+          <p class="card-text text-white mt-0">App created to help in the efficiency in a governmental
             workplace</p>
         </div>
       </div>
@@ -28,8 +27,8 @@
       <div class="card">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Music & Death</h5>
-          <p class="card-text"> Data science project where we analyze if there is
+          <h5 class="card-title text-black">Music & Death</h5>
+          <p class="card-text text-white mt-0"> Data science project where we analyze if there is
             a relationship between the life of a musicians and#}
             their not natural deaths</p>
         </div>
