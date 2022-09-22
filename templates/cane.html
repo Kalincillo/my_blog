@@ -387,6 +387,44 @@
             <img src="{{ url_for('static', filename='/images/projects/eraser.jpg') }}" class="project-img">
           </li>
         </ol>
+        <h5>5.1.3 Final designs</h5>
+        <h6 class="mt-4">5.1.3.1 Microcontroller Design, Sensors, Power Stage and Motors</h6>
+        <h6>Schematic: Microcontroller, sensors and motors</h6>
+        <img src="{{ url_for('static', filename='/images/projects/schematic.jpg') }}" class="project-img">
+        <p>This is the main circuit since the microcontroller is found, which is the one that makes the changes in the
+          memory and the motors, thanks to the information sent by the ultrasonic sensor.</p>
+        <p>P1_0 is where the micro sends the pulse to the sensor and also where the sensor sends the information.</p>
+        <p>From P1_1 to P1_4 are the outputs that go to the motors. First, it is sent to a buffer since the current
+          demanded by the DAC resistors is not enough with the one sent by the micro. Then they go into the DAC
+          conversion to make it a variable voltage. It is then sent to a voltage follower to remove load effects which
+          then goes to the TIP41C which amplifies the current as the motors draw high current.</p>
+        <p>In the P2 there is a connection via a flat cable to the Voice Memory inputs.</p>
+        <h6 class="mt-4">IC Design</h6>
+        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_2.jpg') }}" class="project-img">
+        <h6 class="mt-4">MCU Design</h6>
+        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_3.jpg') }}" class="project-img">
+        <h6 class="mt-4">5.1.3.2 Voice memory</h6>
+        <h6>Schematic; Voice memory</h6>
+        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_4.jpg') }}" class="project-img">
+        <p>The connections made are for the addressing mode in which the recording part is added. The switch found on
+          the schematic is to switch to recording mode (low) or playback mode (high).</p>
+        <h6>Voice memory IC design</h6>
+        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_5.jpg') }}" class="project-img">
+        <h3 class="mt-4">Chassis Design and Manufacture</h3>
+        <h5 class="mt-4">5.2.1 Basic Structure</h5>
+        <p>The design consists of an aluminum pole with connections to the sensor and the chassis mounted on the
+          pole.</p>
+        <p>The measurements of the cane to be used are as follows:</p>
+        <img src="{{ url_for('static', filename='/images/projects/cane_2.jpg') }}" class="project-img">
+        <p>The sensor was set at a certain angle so that the cane can be tilted and handled like a normal cane for the
+          blind.</p>
+        <img src="{{ url_for('static', filename='/images/projects/cane_3.jpg') }}" class="project-img">
+        <h5 class="mt-4">5.2.2 Chassis</h5>
+        <p class="mt-0">The chassis that contains the PCBs is made of acrylic with epoxy glue.</p>
+        <img src="{{ url_for('static', filename='/images/projects/cane_4.jpg') }}" class="project-img">
+        <h3 class="mt-4">5.3 Functional test</h3>
+
+
       </section>
     </div>
   </div>
