@@ -52,6 +52,10 @@ def contact():
 def cane():
     return render_template('cane.html')
 
+@app.route('/wordcloud')
+def wordcloud():
+    return render_template('wordcloud.html')
+
 
 
 if __name__ == '__main__':
