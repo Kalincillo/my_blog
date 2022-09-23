@@ -3,11 +3,11 @@
 {% block content %}
   <div class="container text-white">
     <div class="row project-text">
-      <h1 class="display-2 text-white">
+      <h1 class="display-2">
         White cane
       </h1>
-      <h3 class="text-white mt-1">Background</h3>
-      <p class="text-white project-text">
+      <h3 class="mt-1">Background</h3>
+      <p class="project-text">
         Since ancient times, blind people have sought different ways to overcome their limitations, but it was not until
         1921 that José Mario Fallótico, in Buenos Aires, Argentina, discovered that the use of a white cane would serve
         to distinguish him and thus be able to help him; only that José Fallotic never patented his invention, and it
@@ -30,23 +30,23 @@
         However, I believe that there is still much to be done, and it would be very useful for the blind person to
         receive more information, such as a cane implemented with electronic accessories.
       </p>
-      <h3 class="text-white mt-3">Proximity sensor</h3>
-      <p class="text-white project-text">
+      <h3 class="mt-3">Proximity sensor</h3>
+      <p class="project-text">
         Ultrasonic sensors have as their main function the detection of objects through the emission and reflection of
         acoustic waves. They work by emitting an ultrasonic pulse against existing objects, in such a way that upon
         detecting the reflected pulse, a timer is stopped that started counting when the pulse was emitted. This time is
         referred to distance and according to the chosen response parameters, it sends a digital or analog electrical
         signal.
       </p>
-      <h3 class="text-white mt-3">Objectives</h3>
-      <h5 class="text-white mt-2">General</h5>
-      <p class="text-white project-text">
+      <h3 class="mt-3">Objectives</h3>
+      <h5 class="mt-2">General</h5>
+      <p class="project-text">
         Detect the distance of an obstacle with the implementation of proximity sensors
         and give a warning by means of vibrating motors that will increase their intensity with the approach to said
         obstacle and with a voice indicating the distance from it (as long as the blind person wants it).
       </p>
-      <h5 class="text-white mt-2">Specifics</h5>
-      <ul class="text-white ps-5">
+      <h5 class="mt-2">Specifics</h5>
+      <ul class="ps-5">
         <li>Measure the distance between an obstacle and the blind person to prevent the blind person from having
           physical contact with it.
         </li>
@@ -55,41 +55,41 @@
         </li>
         <li>Save maintenance using a low energy consumption system in order to have a long duration for one day.</li>
       </ul>
-      <h5 class="text-white mt-2">Limitations</h5>
-      <ul class="text-white ps-5">
+      <h5 class="mt-2">Limitations</h5>
+      <ul class="ps-5">
         <li>Maximum detection distance of an object is 2 meters.</li>
         <li>The detection angle is 55 degrees.</li>
         <li>The maximum voltage of the vibrator motors is 5v.</li>
         <li>Non-detection of some objects with angles not reachable by the sensors.</li>
       </ul>
-      <h3 class="text-white mt-3">Introduction</h3>
-      <div class="text-white">
+      <h3 class="mt-3">Introduction</h3>
+      <div>
         This document deals with the evolution of the realization of the electronic prototype, with intentions to help
         the blind, Electronic Cane for the Blind, following up from the creation of the idea to the final assembly of
         all the components and materials.
       </div>
-      <div class="text-white mt-2 ps-5">
+      <div class="mt-2 ps-5">
         <strong>Chapter I</strong> describes in detail what the prototype is about, describing each part or stage.
       </div>
-      <div class="text-white mt-2 ps-5">
+      <div class="mt-2 ps-5">
         <strong>Chapter II</strong> It talks about the analysis and creation of the stages that will achieve the
         intention of the device.
       </div>
-      <div class="text-white mt-2 ps-5">
+      <div class="mt-2 ps-5">
         <strong>Chapter III</strong> It deals with the elaboration of the algorithm, flowchart and executed codes.
       </div>
-      <div class="text-white mt-2 ps-5">
+      <div class="mt-2 ps-5">
         <strong>Chapter IV</strong> presents the results obtained from each of the parts.
       </div>
-      <div class="text-white mt-2 ps-5">
+      <div class="mt-2 ps-5">
         <strong>Chapter v</strong> It is the process of assembly or support on which the designed circuits will rest,
         where the measurements of the chassis and the cane are found.
       </div>
-      <div class="text-white mt-2 ps-5">
+      <div class="mt-2 ps-5">
         <strong>Chapter VI</strong> There are specifications to take into consideration for the correct use of the
         prototype.
       </div>
-      <section class="text-white">
+      <section>
         <h1 class="text-center mt-3 text-uppercase">Chapter I. Description</h1>
         <h3 class="mt-4">1.1 General operation</h3>
         <p class="mt-0">It is a cane implemented with sensors that will be able to warn the blind that there is an
@@ -139,7 +139,7 @@
           micro, is the
           phrase that is going to be said.</p>
       </section>
-      <section class="text-white">
+      <section>
         <h1 class="text-center mt-3 text-uppercase">Chapter II. Analysis and design</h1>
         <h3 class="mt-4">2.1 Stages</h3>
         <h5 class="mt-4">2.1.1 Power supply</h5>
@@ -211,7 +211,7 @@
         <p class="mt-0">Audio recorder distances</p>
         <img src="{{ url_for('static', filename='/images/projects/voice_dac.jpg') }}" class="project-img">
       </section>
-      <section class="text-white">
+      <section>
         <h1 class="text-center mt-5 text-uppercase">Chapter III. Programming.</h1>
         <h3 class="mt-3">3.1 Algorithm</h3>
         <ol class="ps-5">
@@ -253,7 +253,7 @@
           </tbody>
         </table>
       </section>
-      <section class="text-white">
+      <section>
         <h1 class="text-center text-uppercase mt-5">Chapter IV. experimentation</h1>
         <h3 class="mt-3">4.1 block experimentation.</h3>
         <h5 class="mt-4">4.1.1 Load control</h5>
@@ -322,7 +322,7 @@
           in the addresses that were occupied, to To verify it, the switch was put into playback and the addresses were
           entered with ones and zeros and thus checking if what was entered at that address was what was reproduced.</p>
       </section>
-      <section class="text-white">
+      <section>
         <h1 class="text-uppercase text-center mt-5">Chapter V. Construction</h1>
         <h3 class="mt-3">5.1 Design and Elaboration of Printed Circuits</h3>
         <p>Once the experimentation were finished, the Eagle designs of the printed circuits were carried out.</p>
