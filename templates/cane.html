@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="container">
+  <div class="container text-white">
     <div class="row project-text">
       <h1 class="display-2 text-white">
         White cane
@@ -423,8 +423,67 @@
         <p class="mt-0">The chassis that contains the PCBs is made of acrylic with epoxy glue.</p>
         <img src="{{ url_for('static', filename='/images/projects/cane_4.jpg') }}" class="project-img">
         <h3 class="mt-4">5.3 Functional test</h3>
-
-
+        <p class="mt-0">The device was tested by initializing the sensors by checking power on.</p>
+        <img src="{{ url_for('static', filename='/images/projects/cane_5.jpg') }}" class="project-img">
+        <p>In the handle, the motors were tested, thus having a satisfactory response.</p>
+        <p class="mt-0">Using headphones, the sound was checked, having a good response, as with the motors.</p>
+        <p class="mt-0">NOTE: The last two tests could not be verified through images since the sense of touch and
+          hearing are
+          used.</p>
+      </section>
+      <section>
+        <h1>CHAPTER VI OPERATION AND MAINTENANCE MANUAL</h1>
+        <h3 class="mt-3">6.1 Specifications</h3>
+        <ol class="ps-5">
+          <li>Input: 12V-DC</li>
+          <li>Range: 10-210 cm</li>
+          <li>Opening angle: 45°-60°</li>
+        </ol>
+        <h3 class="mt-3">operating manual</h3>
+        <p>Steps to follow for the correct use of the electronic cane for the blind.</p>
+        <ol class="ps-5">
+          <li>Turn on the device with the switch on the baton handle.</li>
+          <li>Activating the proximity sensors using the button located on the left side of the handle will cause the
+            vibrating motors to start working.
+          </li>
+          <li>To know the distance through voice memory, press the button located on the right side of the handle, this
+            will activate and the distance that must be in a range of 10cm to 2 meters will be heard in the headset.
+          </li>
+          <li>Wait for a distance to finish playing before you can listen to another.</li>
+          <li>If you are at a distance greater than 2.10 meters, expect a reproduction of a very far distance.</li>
+          <li>In the event of a device failure, press the sensor activation button again.</li>
+          <li>To turn off the device, switch the main switch to off mode.</li>
+        </ol>
+        <img src="{{ url_for('static', filename='/images/projects/cane_6.jpg') }}" class="project-img mt-3">
+        <h3 class="mt-4">6.3 Maintenance and Assembly Manual</h3>
+        <h5 class="mt-4">When the battery is low.</h5>
+        <ol class="ps-5">
+          <li>Remove the acrylic cover with a screwdriver.</li>
+          <li>Remove the battery from the holders being careful not to pull on the cables.</li>
+          <li>Change for a 12 volt battery.</li>
+          <li>Put the acrylic lid back on.</li>
+          <li>Check operation.</li>
+        </ol>
+        <h3>To remove the PCB.</h3>
+        <ol class="ps-5">
+          <li>Remove the acrylic cover with a screwdriver.</li>
+          <li>Check that the power button is off</li>
+          <li>Remove the 4 nuts below the acrylic using a 5/16 socket or wrench or pliers</li>
+          <li>Remove the plug from the headphones by turning the nut that is at the bottom, stopping the plug to take
+            care that it does not turn.
+          </li>
+          <li>Carefully lift the card, taking care not to pull on any cables.</li>
+        </ol>
+        <h3 class="mt-4">6.4 Warnings</h3>
+        <ul class="ps-5">
+          <li>Do not insert low quality batteries as this may cause device failure.</li>
+          <li>Do not place batteries with a voltage other than 12 volts, this may cause the device to not work or
+            overload it.
+          </li>
+          <li>Do not drop the device as it has delicate electrical components.</li>
+          <li>Do not expose to water.</li>
+          <li>Do not lean on the cane as it is only for use as a guide.</li>
+        </ul>
       </section>
     </div>
   </div>
