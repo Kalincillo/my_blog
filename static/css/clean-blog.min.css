@@ -549,3 +549,21 @@ footer .copyright {
     max-width: 100%;
     height: auto;
 }
+
+
+.code-box{
+    background-color: #00204d;
+}
+
+
+.imp {
+    color: #ff8c00;
+}
+
+.nw {
+    white-space: nowrap;
+}
+
+pre {
+    display: inline;
+}
