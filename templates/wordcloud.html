@@ -28,6 +28,34 @@
           </pre>
         </div>
       </section>
+      <section>
+        <h3 class="mt-4">external libraries</h3>
+        <p class="mt-0">Wordcloud is normally not installed in anaconda or jupyter notebooks
+          by default, so you need to installed manually</p>
+        <div class="code-box">
+          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+          <pre>
+            <code>
+              <span class="sign-2">!</span><span
+              class="sign">{</span><span>sys</span><span>.</span><span>executable</span><span
+              class="sign">} </span><span class="arguments">-m </span><span class="imp">pip </span><span>install </span><span>wordcloud</span>
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section>
+        <h3 class="mt-4">Stopwords</h3>
+        <p class="mt-0">Import the library for word cloud and the STOPWORDS to eliminate words usually made up of articles, pronouns,
+          prepositions, adverbs, and even some verbs.</p>
+        <div class="code-box">
+          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+          <pre>
+            <code>
+              <span class="imp">from </span><span>wordcloud </span><span class="imp">import </span><span>WordCloud, STOPWORDS</span>
+            </code>
+          </pre>
+        </div>
+      </section>
 
     </div>
   </div>

@@ -567,3 +567,15 @@ footer .copyright {
 pre {
     display: inline;
 }
+
+.sign {
+    color: #e3ff00;
+}
+
+.arguments {
+    color: #686868;
+}
+
+.sign-2 {
+    color: #DC143C;
+}
