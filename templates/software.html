@@ -28,8 +28,10 @@
     <div class="col">
       <div class="card">
         <img src="{{ url_for('static', filename='images/projects/27s.jpg') }}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-black">Music & Death</h5>
+        <div class="card-body" id="project-title">
+          <a href="{{ url_for('music_and_death') }}" class="card-title text-black">
+            <h5 class="card-title text-black">Music & Death</h5>
+          </a>
           <p class="card-text text-white mt-0"> Data science project where we analyze if there is
             a relationship between the life of a musicians and
             their not natural deaths</p>

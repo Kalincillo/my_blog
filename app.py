@@ -56,6 +56,10 @@ def cane():
 def wordcloud():
     return render_template('wordcloud.html')
 
+@app.route('/music_and_death')
+def music_and_death():
+    return render_template('music_and_death.html')
+
 
 
 if __name__ == '__main__':
