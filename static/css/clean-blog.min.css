@@ -553,6 +553,8 @@ footer .copyright {
 
 .code-box{
     background-color: #00204d;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 
@@ -564,9 +566,6 @@ footer .copyright {
     white-space: nowrap;
 }
 
-pre {
-    display: inline;
-}
 
 .sign {
     color: #e3ff00;
@@ -578,4 +577,21 @@ pre {
 
 .sign-2 {
     color: #DC143C;
+}
+
+.str {
+    color: #018749;
+}
+
+.func {
+    color: #0071c5;
+}
+
+.method {
+    color: #E44D2E;
+}
+
+pre, code {
+    white-space: pre-line;
+    padding-left: 15px;
 }
