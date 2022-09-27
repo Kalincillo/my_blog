@@ -75,11 +75,30 @@
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
+              <span>stop_words </span><span class="imp">= </span><span>[]</span>
+              <span>with </span><span class="func">open</span><span>(</span><span class="str">"stop_words_spanish.txt", "r"</span><span>) </span><span>as </span><span>f</span><span>:</span>
+              <span>word </span><span class="imp">= </span><span>f.</span><span class="method">read</span><span>()</span>
+              <span>stop_words </span><span class="imp">= </span><span>word.</span><span class="method">splitlines</span><span>()</span>
 
+              <span class="comment">#Show first 10 words</span>
+              <span>['algÃºn',
+                     'alguna',
+                     'algunas',
+                     'alguno',
+                     'algunos',
+                     'ambos',
+                     'ampleamos',
+                     'ante',
+                     'antes',
+                     'aquel']
+              </span>
             </code>
           </pre>
         </div>
-
+      </section>
+      <section>
+        <h3 class="mt-4">Add new stopwords</h3>
+        <p class="mt-0">If you want to add new stopwords this is the place</p>
       </section>
 
     </div>

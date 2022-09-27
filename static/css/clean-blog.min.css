@@ -595,3 +595,7 @@ pre, code {
     white-space: pre-line;
     padding-left: 15px;
 }
+
+.comment {
+    color: gray;
+}
