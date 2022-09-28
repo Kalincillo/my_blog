@@ -453,7 +453,7 @@ footer .copyright {
     text-align: center;
 }
 
-.footer-margin  {
+.footer-margin {
     margin-right: 0;
     margin-left: 0;
 }
@@ -540,7 +540,7 @@ footer .copyright {
     text-decoration: none;
 }
 
-.project-text{
+.project-text {
     text-align: justify;
     margin: 0;
 }
@@ -551,10 +551,9 @@ footer .copyright {
 }
 
 
-.code-box{
+.code-box {
     background-color: #00204d;
-    overflow: auto;
-    white-space: nowrap;
+
 }
 
 
@@ -592,10 +591,11 @@ footer .copyright {
 }
 
 pre, code {
-    white-space: pre-line;
-    padding-left: 15px;
+    padding-left: 25px;
 }
+
 
 .comment {
     color: gray;
 }
+

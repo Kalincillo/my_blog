@@ -18,12 +18,14 @@
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
-              <span class="imp">import </span><span>numpy </span><span class="imp">as </span><span>np</span>
-              <span class="imp">import </span><span>pandas </span><span class="imp">as </span><span>pd</span>
-              <span class="imp">from </span><span>PIL </span><span class="imp">import </span><span>Image</span>
-              <span class="imp">import </span><span>matplotlib.pyplot </span><span
-              class="imp">as </span><span>plt</span>
-              <span class="imp">import </span><span>sys</span>
+<!-- ***************************** OPEN PYTHON CODE ********************************************** -->
+<span class="imp">import </span><span>numpy </span><span class="imp">as </span><span>np</span>
+<span class="imp">import </span><span>pandas </span><span class="imp">as </span><span>pd</span>
+<span class="imp">from </span><span>PIL </span><span class="imp">import </span><span>Image</span>
+<span class="imp">import </span><span>matplotlib.pyplot </span><span
+  class="imp">as </span><span>plt</span>
+<span class="imp">import </span><span>sys</span>
+<!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
         </div>
@@ -36,22 +38,28 @@
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
-              <span class="sign-2">!</span><span
-              class="sign">{</span><span>sys</span><span>.</span><span>executable</span><span
-              class="sign">} </span><span class="arguments">-m </span><span class="imp">pip </span><span>install </span><span>wordcloud</span>
+<!-- ***************************** OPEN PYTHON CODE ********************************************** -->
+<span class="sign-2">!</span><span
+  class="sign">{</span><span>sys</span><span>.</span><span>executable</span><span
+  class="sign">} </span><span class="arguments">-m </span><span
+  class="imp">pip </span><span>install </span><span>wordcloud</span>
+<!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
         </div>
       </section>
       <section>
         <h3 class="mt-4">Stopwords</h3>
-        <p class="mt-0">Import the library for word cloud and the STOPWORDS to eliminate words usually made up of articles, pronouns,
+        <p class="mt-0">Import the library for word cloud and the STOPWORDS to eliminate words usually made up of
+          articles, pronouns,
           prepositions, adverbs, and even some verbs.</p>
         <div class="code-box">
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
-              <span class="imp">from </span><span>wordcloud </span><span class="imp">import </span><span>WordCloud, STOPWORDS</span>
+<!-- ***************************** OPEN PYTHON CODE ********************************************** -->
+<span class="imp">from </span><span>wordcloud </span><span class="imp">import </span><span>WordCloud, STOPWORDS</span>
+<!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
         </div>
@@ -63,7 +71,12 @@
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
-              <span>quijote </span><span>= </span><span class="func">open</span><span class="sign">(</span><span class="str">'don_quijote.txt', 'rb'</span><span class="sign">)</span><span>.</span><span class="method">read</span><span>()</span><span>.</span><span class="method">decode</span><span>(</span><span class="str">'utf-8'</span><span>)</span>
+<!-- ***************************** OPEN PYTHON CODE ********************************************** -->
+<span>quijote </span><span>= </span><span class="func">open</span><span class="sign">(</span><span
+  class="str">'don_quijote.txt', 'rb'</span><span class="sign">)</span><span>.</span><span
+  class="method">read</span><span class="sign">()</span><span>.</span><span
+  class="method">decode</span><span class="sign">(</span><span class="str">'utf-8'</span><span class="sign">)</span>
+<!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
         </div>
@@ -75,23 +88,16 @@
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
-              <span>stop_words </span><span class="imp">= </span><span>[]</span>
-              <span>with </span><span class="func">open</span><span>(</span><span class="str">"stop_words_spanish.txt", "r"</span><span>) </span><span>as </span><span>f</span><span>:</span>
-              <span>word </span><span class="imp">= </span><span>f.</span><span class="method">read</span><span>()</span>
-              <span>stop_words </span><span class="imp">= </span><span>word.</span><span class="method">splitlines</span><span>()</span>
-
-              <span class="comment">#Show first 10 words</span>
-              <span>['algÃºn',
-                     'alguna',
-                     'algunas',
-                     'alguno',
-                     'algunos',
-                     'ambos',
-                     'ampleamos',
-                     'ante',
-                     'antes',
-                     'aquel']
-              </span>
+<!-- ***************************** OPEN PYTHON CODE ********************************************** -->
+<span>stop_words </span><span class="imp">= </span><span class="sign">[]</span>
+<span class="imp">with </span><span class="func">open</span><span>(</span><span
+  class="str">"stop_words_spanish.txt", "r"</span><span>) </span><span class="imp">as </span><span>f</span><span
+  class="sign-2">:</span>
+<span>    word </span><span class="imp">= </span><span>f.</span><span
+  class="method">read</span><span class="sign">()</span>
+<span>    stop_words </span><span class="imp">= </span><span>word.</span><span class="method">splitlines</span><span
+  class="sign">()</span>
+<!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
         </div>
@@ -99,6 +105,26 @@
       <section>
         <h3 class="mt-4">Add new stopwords</h3>
         <p class="mt-0">If you want to add new stopwords this is the place</p>
+        <div class="code-box">
+          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+          <pre>
+            <code>
+<!-- ***************************** OPEN PYTHON CODE ********************************************** -->
+<span>stop_words.</span><span class="func">extend</span><span class="sign">([</span><span class="str">'él', 'qué', 'así', 'allí',
+                   'te', 'cómo', 'más', 'había',
+                   'día', 'aquí', 'tu', 'está',
+                   'os', 'quién', 'mis', 'tú',
+                   'sé', 'aun', 'mí', 'vos',
+                   'ma', 'has', 'algún'<span class="sign">])</span>
+</span>
+<!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section>
+        <h3 class="mt-4">Wordcloud function</h3>
+        <p class="mt-0">Run the WordCloud function and customize max words, color and stopwords</p>
       </section>
 
     </div>
