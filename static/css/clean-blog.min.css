@@ -583,3 +583,11 @@ pre, code {
     color: gray;
 }
 
+.num {
+    color: #DE3163;
+}
+
+.arg {
+    color: #bc8f8f;
+}
+
