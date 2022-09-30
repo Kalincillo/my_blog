@@ -537,7 +537,8 @@ footer .copyright {
 
 .code-box {
     background-color: #00204d;
-
+    border: 5px solid #0085a1;
+    border-radius: 15px;
 }
 
 
@@ -590,4 +591,3 @@ pre, code {
 .arg {
     color: #bc8f8f;
 }
-

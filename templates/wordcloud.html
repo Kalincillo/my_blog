@@ -159,7 +159,7 @@
             </code>
           </pre>
         </div>
-        <img src="{{ url_for('static', filename='/images/projects/wc.jpg') }}">
+        <img src="{{ url_for('static', filename='/images/projects/wc.jpg') }}" class="project-img">
         <p>We can see that don and Quijote are the words that appears the most</p>
       </section>
       <section>
@@ -180,7 +180,7 @@
             </code>
           </pre>
         </div>
-        <img src="{{ url_for('static', filename='/images/projects/silhouette.jpg') }}">
+        <img src="{{ url_for('static', filename='/images/projects/silhouette.jpg') }}" class="project-img">
       </section>
       <section>
         <h3>Final Image</h3>
@@ -192,13 +192,21 @@
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
 <span>quixote_wc </span><span class="imp">= </span><span class="func">WordCloud</span><span class="sign">(</span>
 <span class="arg">    background_color</span><span class="imp">=</span><span class="str">'white'</span><span>,</span>
-<span class="arg">    max_words</span><span class="num">200</span><span>,</span>
+<span class="arg">    max_words</span><span class="imp">=</span><span class="num">200</span><span>,</span>
+<span class="arg">    mask</span><span class="imp">=</span><span>don_quixote_mask,</span>
+<span class="arg">    stopwords</span><span class="imp">=</span><span>stop_words</span>
+<span class="sign">)</span>
 
+<span>quixote_wc.</span><span class="func">generate</span><span class="sign">(</span><span>quijote</span><span class="sign">)</span>
+<span>fig </span><span class="imp">= </span><span>plt.</span><span class="func">figure</span><span class="sign">(</span><span class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
+<span>plt.</span><span class="func">imshow</span><span class="sign">(</span><span>quixote_wc, </span><span class="arg">interpolation</span><span class="imp">=</span><span class="str">'bilinear'</span><span class="sign">)</span>
+<span>plt.</span><span class="func">axis</span><span class="sign">(</span><span class="str">'off'</span><span class="sign">)</span>
+<span>plt.</span><span class="func">show</span><span class="sign">()</span>
 <!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
-
         </div>
+        <img src="{{ url_for('static', filename='/images/projects/quixote.jpg') }}" class="project-img">
       </section>
 
     </div>
