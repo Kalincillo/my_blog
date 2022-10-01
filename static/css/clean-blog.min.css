@@ -546,20 +546,30 @@ footer .copyright {
     height: 135px;
     background-color: #00204d;
     border: 5px solid #0085a1;
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     overflow: auto;
     overflow-y: hidden;
+}
 
+.code-box-4 {
+    height: 200px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 .code-box-5 {
     height: 235px;
     background-color: #00204d;
     border: 5px solid #0085a1;
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     overflow: auto;
     overflow-y: hidden;
-
 }
 
 
@@ -612,4 +622,12 @@ pre, code {
 
 .arg {
     color: #bc8f8f;
+}
+
+
+.copy-button {
+    background-color: #0085a1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 95%;
 }

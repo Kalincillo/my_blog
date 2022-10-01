@@ -14,8 +14,10 @@
       <p>The programming language to use is Python</p>
       <section>
         <h3>Libraries</h3>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
         <div class="code-box-5">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -34,8 +36,10 @@
         <h3 class="mt-4">external libraries</h3>
         <p class="mt-0">Wordcloud is normally not installed in anaconda or jupyter notebooks
           by default, so you need to installed manually</p>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
         <div class="code-box-1">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -53,8 +57,10 @@
         <p class="mt-0">Import the library for word cloud and the STOPWORDS to eliminate words usually made up of
           articles, pronouns,
           prepositions, adverbs, and even some verbs.</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-1">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -67,8 +73,10 @@
       <section>
         <h3 class="mt-4">Book</h3>
         <p class="mt-0">Load the spanish version of the book</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-1">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -84,8 +92,10 @@
       <section>
         <h3 class="mt-4">Stopwords</h3>
         <p class="mt-0">Load the spanish stopwords into a python list</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-4">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -125,7 +135,7 @@
       <section>
         <h3 class="mt-4">Wordcloud function</h3>
         <p class="mt-0">Run the WordCloud function and customize max words, color and stopwords
-        and pass the read book to the function to generate the wordcloud</p>
+          and pass the read book to the function to generate the wordcloud</p>
         <div class="code-box">
           <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
           <pre>
@@ -137,7 +147,8 @@
 <span class="arg">    stopwords</span><span class="imp">=</span><span>stop_words</span>
 <span class="sign">)</span>
 
-<span>don_quijote_wc.</span><span class="func">generate</span><span class="sign">(</span><span>quijote</span><span class="sign">)</span>
+<span>don_quijote_wc.</span><span class="func">generate</span><span class="sign">(</span><span>quijote</span><span
+  class="sign">)</span>
 <!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
           </pre>
@@ -151,8 +162,11 @@
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
-<span>plt.</span><span class="func">imshow</span><span class="sign">(</span><span>don_quijote_wc, </span><span class="arg">interpolation</span><span class="imp">=</span><span class="str">'bilinear'</span><span class="sign">)</span>
-<span>plt.</span><span class="func">axis</span><span class="sign">(</span><span class="str">'off'</span><span class="sign">)</span>
+<span>plt.</span><span class="func">imshow</span><span class="sign">(</span><span>don_quijote_wc, </span><span
+  class="arg">interpolation</span><span class="imp">=</span><span class="str">'bilinear'</span><span
+  class="sign">)</span>
+<span>plt.</span><span class="func">axis</span><span class="sign">(</span><span class="str">'off'</span><span
+  class="sign">)</span>
 <span>plt.</span><span class="func">show</span><span class="sign">(</span><span class="sign">)</span>
 
 <!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
@@ -170,10 +184,14 @@
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
-<span>don_quixote_mask </span><span class="imp">= </span><span>np.</span><span class="func">array</span><span class="sign">(</span><span class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
+<span>don_quixote_mask </span><span class="imp">= </span><span>np.</span><span class="func">array</span><span
+  class="sign">(</span><span class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span
+  class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
 
 <span class="comment">#Give size and show the image</span>
-<span>fig </span><span class="imp">= </span><span>plt.</span><span class="func">figure</span><span class="sign">(</span><span class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
+<span>fig </span><span class="imp">= </span><span>plt.</span><span class="func">figure</span><span class="sign">(</span><span
+  class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span
+  class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
 <span>plt.</span><span class="func">show</span><span class="sign">()</span>
 
 <!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
@@ -197,10 +215,15 @@
 <span class="arg">    stopwords</span><span class="imp">=</span><span>stop_words</span>
 <span class="sign">)</span>
 
-<span>quixote_wc.</span><span class="func">generate</span><span class="sign">(</span><span>quijote</span><span class="sign">)</span>
-<span>fig </span><span class="imp">= </span><span>plt.</span><span class="func">figure</span><span class="sign">(</span><span class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
-<span>plt.</span><span class="func">imshow</span><span class="sign">(</span><span>quixote_wc, </span><span class="arg">interpolation</span><span class="imp">=</span><span class="str">'bilinear'</span><span class="sign">)</span>
-<span>plt.</span><span class="func">axis</span><span class="sign">(</span><span class="str">'off'</span><span class="sign">)</span>
+<span>quixote_wc.</span><span class="func">generate</span><span class="sign">(</span><span>quijote</span><span
+  class="sign">)</span>
+<span>fig </span><span class="imp">= </span><span>plt.</span><span class="func">figure</span><span class="sign">(</span><span
+  class="arg">figsize</span><span class="imp">=</span><span class="sign">(</span><span
+  class="num">14</span><span>, </span><span class="num">18</span><span class="sign">))</span>
+<span>plt.</span><span class="func">imshow</span><span class="sign">(</span><span>quixote_wc, </span><span class="arg">interpolation</span><span
+  class="imp">=</span><span class="str">'bilinear'</span><span class="sign">)</span>
+<span>plt.</span><span class="func">axis</span><span class="sign">(</span><span class="str">'off'</span><span
+  class="sign">)</span>
 <span>plt.</span><span class="func">show</span><span class="sign">()</span>
 <!-- ***************************** CLOSE PYTHON CODE ********************************************* -->
             </code>
