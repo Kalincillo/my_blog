@@ -539,6 +539,27 @@ footer .copyright {
     background-color: #00204d;
     border: 5px solid #0085a1;
     border-radius: 15px;
+    overflow: auto;
+}
+
+.code-box-1 {
+    height: 135px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+
+}
+
+.code-box-5 {
+    height: 235px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+
 }
 
 
@@ -577,6 +598,7 @@ footer .copyright {
 
 pre, code {
     padding-left: 25px;
+    overflow: unset;
 }
 
 
