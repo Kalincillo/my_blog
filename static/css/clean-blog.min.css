@@ -542,6 +542,10 @@ footer .copyright {
     overflow: auto;
 }
 
+.img-frame {
+    border: 10px solid #0085a1;
+}
+
 .code-box-1 {
     height: 135px;
     background-color: #00204d;
