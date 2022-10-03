@@ -15,10 +15,10 @@
       <section>
         <h3>Libraries</h3>
         <div class="copy-button">
-          <button type="button" class="fa fa-copy"></button>
+          <button type="button" class="fa fa-copy" onclick="copyText()"></button>
         </div>
         <div class="code-box-5">
-          <pre>
+          <pre class="code-marg">
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
 <span class="imp">import </span><span>numpy </span><span class="imp">as </span><span>np</span>
@@ -115,8 +115,10 @@
       <section>
         <h3 class="mt-4">Add new stopwords</h3>
         <p class="mt-0">If you want to add new stopwords this is the place</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-5">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -136,8 +138,10 @@
         <h3 class="mt-4">Wordcloud function</h3>
         <p class="mt-0">Run the WordCloud function and customize max words, color and stopwords
           and pass the read book to the function to generate the wordcloud</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-6">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -157,8 +161,10 @@
       <section>
         <h3 class="mt-4">Plotting</h3>
         <p class="mt-0">Plot the resulted wordcloud</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-3">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -173,14 +179,16 @@
             </code>
           </pre>
         </div>
-        <img src="{{ url_for('static', filename='/images/projects/wc.jpg') }}" class="project-img">
+        <img src="{{ url_for('static', filename='/images/projects/wc.jpg') }}" class="project-img mt-4">
         <p>We can see that don and Quijote are the words that appears the most</p>
       </section>
       <section>
         <h3 class="mt-2">Custom image</h3>
         <p class="mt-0">Now we put the custom silhouette image to insert the word cloud</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-5">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -198,13 +206,15 @@
             </code>
           </pre>
         </div>
-        <img src="{{ url_for('static', filename='/images/projects/silhouette.jpg') }}" class="project-img">
+        <img src="{{ url_for('static', filename='/images/projects/silhouette.jpg') }}" class="project-img mt-4">
       </section>
       <section>
         <h3>Final Image</h3>
-        <p>Add the wordcloud to the silhouette image</p>
-        <div class="code-box">
-          <button type="button" class="fa fa-copy float-end me-3 mt-3"></button>
+        <p class="mt-0">Add the wordcloud to the silhouette image</p>
+        <div class="copy-button">
+          <button type="button" class="fa fa-copy"></button>
+        </div>
+        <div class="code-box-9">
           <pre>
             <code>
 <!-- ***************************** OPEN PYTHON CODE ********************************************** -->
@@ -229,7 +239,7 @@
             </code>
           </pre>
         </div>
-        <img src="{{ url_for('static', filename='/images/projects/quixote.jpg') }}" class="project-img">
+        <img src="{{ url_for('static', filename='/images/projects/quixote.jpg') }}" class="project-img mt-4">
       </section>
 
     </div>

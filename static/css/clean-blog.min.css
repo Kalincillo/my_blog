@@ -552,6 +552,26 @@ footer .copyright {
     overflow-y: hidden;
 }
 
+.code-box-2 {
+    height: 155px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.code-box-3 {
+    height: 180px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
 .code-box-4 {
     height: 200px;
     background-color: #00204d;
@@ -570,6 +590,51 @@ footer .copyright {
     border-bottom-left-radius: 15px;
     overflow: auto;
     overflow-y: hidden;
+}
+
+.code-box-6 {
+    height: 265px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.code-box-7 {
+    height: 300px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.code-box-8 {
+    height: 340px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.code-box-9 {
+    height: 395px;
+    background-color: #00204d;
+    border: 5px solid #0085a1;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.code-marg {
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 
