@@ -60,6 +60,14 @@ def wordcloud():
 def music_and_death():
     return render_template('music_and_death.html')
 
+@app.route('/pedal')
+def pedal():
+    return render_template('pedal.html')
+
+@app.route('/rudi')
+def rudi():
+    return render_template('rudi.html')
+
 
 
 if __name__ == '__main__':
