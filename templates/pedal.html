@@ -5,20 +5,23 @@
     <div class="row">
       <h1 class="display-2">Custom Guitar Overdrive</h1>
       <section>
-        <h3>Objective</h3>
-        <p>The main purpose with this project is to create a custom guitar pedal
+        <h3 class="mt-4">Objective</h3>
+        <p class="project-text">The main purpose with this project is to create a custom guitar pedal
           but not versatile, this is most focus in a warm sound</p>
-        <h3>Red Llama</h3>
-        <p>The famous guitar pedall red llama is used as a base and pre amp</p>
-        <img src="{{ url_for('static', filename='/images/projects/red_llama.jpg') }}" class="project-img mt-4">
+        <h3 class="mt-4">Red Llama</h3>
+        <p class="mt-0 project-text">The famous guitar pedall red llama is used as a base and pre amp</p>
+        <img src="{{ url_for('static', filename='/images/projects/red_llama.jpg') }}"
+             class="img-frame project-img mt-4">
         <h5 class="mt-4">Schematic</h5>
-        <p class="mt-0">The schematic of the red llama is very simple just an inverter used as a pre amp that causes
+        <p class="mt-0 project-text">The schematic of the red llama is very simple just an inverter used as a pre amp that causes
           a natural overdrive that is responsive and sounds amazing with humbuckers or single coils</p>
-        <img src="{{ url_for('static', filename='/images/projects/red_llama_sch.jpg') }}" class="project-img mt-2">
-        <p>The guitar effect uses a 4049 inverter using two stages to correct the signal and provoke
+        <img src="{{ url_for('static', filename='/images/projects/red_llama_sch.jpg') }}"
+             class="img-frame project-img mt-4">
+        <p class="project-text mt-4">The guitar effect uses a 4049 inverter using two stages to correct the signal and provoke
           a higher gain but not too much</p>
-        <p>The circuit in the bottom is just to prevent unwanted noise and not drain the battery
+        <p class="project-text">The circuit in the bottom is just to prevent unwanted noise and not drain the battery
           because they tend to drain when not used inverters are leave with no connection</p>
+<<<<<<< HEAD
         <h3>SD-1 and TS9</h3>
 <<<<<<< HEAD
         <p class="mt-0">The circuit is also based on the Tube screamer and Super Overdrive that are similar</p>
@@ -30,6 +33,38 @@
         <img src="{{ url_for('static', filename='/images/projects/screamer.jpg') }}" class="project-img mt-2">
 
 >>>>>>> ac81859a54d49293e8e86262d55ea481b840bedf
+=======
+        <h3 class="mt-4">SD-1 and TS9</h3>
+        <p class="mt-0 project-text">THe other section of the pedal is based in the famous Super Overdrive (SD-1) from BOOS and the
+          TubeScreamer
+          from IBANEZ</p>
+        <img src="{{ url_for('static', filename='/images/projects/ts9_sd1.jpg') }}" class="img-frame project-img mt-4">
+        <h5 class="mt-4">Schematic</h5>
+        <p class="mt-0 project-text">The Tube Screamer circuit consists of several blocks, JFET Switch, Power Supply, Input Buffer,
+          Clipping Amplifier, Tone and Volume Control and Output Buffer.
+          The Input Buffer isolates the pedal from the guitar, maintaining signal integrity. Then the Clipping Amplifier
+          adds gain and distortion and the Tone and Volume Control adjusts the bass and treble. Finally the Output Buffer
+          prepares the signal to be transferred to the next pedal or to the amplifier. The JFET Switch is used to turn
+          the effect on or off and the Power Supply provides power to the entire circuit.</p>
+        <img src="{{ url_for('static', filename='/images/projects/screamer.jpg') }}" class="img-frame project-img mt-4">
+        <p class="project-text mt-4">For commercial reasons I can not put the final result since it is still in development to have a PCB and name
+          of the pedal but then I will show the BETA phase and how it sounds, you will be able to notice the warm tone
+          and the well-defined notes even in high gain of the overdrive</p>
+      </section>
+      <section>
+        <h3 class="mt-4">BETA PHASE</h3>
+        <p class="mt-0 project-text">In the next image you can see part of the Tube Screamer and the Red Llama pedals where i change
+          some
+          components to shape the gain and the tone</p>
+        <img src="{{ url_for('static', filename='/images/projects/custom_pedal.jpg') }}"
+             class="img-frame project-img mt-4">
+      </section>
+      <section>
+        <h3 class="mt-4">Testing</h3>
+        <p class="mt-0 project-text">In the next video we tested the final version of the pedal</p>
+        <video class="ratio ratio-16x9 vid-frame mt-4" controls
+               src="{{ url_for('static', filename='/video/pedal_test.mp4') }}"></video>
+>>>>>>> f83338f61d826b33580fc2738d2232b0bdbeb72f
       </section>
     </div>
 
