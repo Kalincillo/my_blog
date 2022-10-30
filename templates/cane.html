@@ -99,7 +99,7 @@
           such an object.
         </p>
         <h3 class="mt-3">1.2 Block diagram</h3>
-        <img src="{{ url_for('static', filename='images/block_diagram.jpg') }}" class="project-img mt-3 img-frame">
+        <img src="{{ url_for('static', filename='images/projects/hardware/cane/block_diagram.jpg') }}" class="project-img mt-3 img-frame">
         <h5 class="mt-4">1.2.1 Power supply</h5>
         <p class="mt-0">In this stage of the circuit, a high-performance 9-volt battery will be implemented to power all
           the stages
@@ -152,45 +152,45 @@
           sensors, integrated circuits and motors, which are the ones that consume the most, reaching the conclusion of
           a 7805 regulator.</p>
         <h6>7805 Regulator</h6>
-        <img src="{{ url_for('static', filename='/images/projects/regulator.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/regulator.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">2.1.3 Proximity sensor</h5>
         <p class="mt-0">The sensors to be used are the SRF05, the proximity sensors generate pulses that are put into
           the micro,
           which is the one in charge of making the conversion to centimeters. That pulse is a 40KHz burst which is
           received by the receiving sensor.</p>
         <h6>Ultrasonic sensor SRF05</h6>
-        <img src="{{ url_for('static', filename='/images/projects/sensor.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/sensor.jpg') }}" class="project-img img-frame">
         <h6 class="mt-3">Sensor parameters</h6>
-        <img src="{{ url_for('static', filename='/images/projects/sensor_inf.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/sensor_inf.jpg') }}" class="project-img img-frame">
         <h6 class="mt-3">transmitter</h6>
         <p class="mt-0">The transmitter is built with a 555 and CMOS inverters, the CMOS feature is used to parallel
           them and
           increase the transmit power. The signal coupled between the positive and negative terminals is 180º out of
           phase, so the voltage applied between the terminals is doubled.</p>
-        <img src="{{ url_for('static', filename='/images/projects/transmitter.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/transmitter.jpg') }}" class="project-img img-frame">
         <h6 class="mt-3">receiver</h6>
         <p class="mt-0">The receiver is composed of two circuits: signal amplifier and detection circuit. The signal is
           received by
           the receiving sensor and amplified 1000 times (60dB) in two steps: one amplifier times 100 (40dB) and one
           amplifier times 10 (20dB).</p>
-        <img src="{{ url_for('static', filename='/images/projects/receiver.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/receiver.jpg') }}" class="project-img img-frame">
         <h6 class="mt-3">Signal detector</h6>
         <p class="mt-0">The signal detector consists of a half bridge rectifier and a comparator. The comparison voltage
           is set to 0.045Vdc.</p>
-        <img src="{{ url_for('static', filename='/images/projects/signal_detector.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/signal_detector.jpg') }}"
              class="project-img img-frame">
         <h5 class="mt-4">2.1.5 Microcontroller</h5>
         <p class="mt-0">This stage will control the motors through port 1. When an obstacle approaches, it will send a
           one or a zero to the outputs, and port 2 will send, as with the motors, a digital signal that, depending on
           the value, will call the saved message, the memory manufacturer's data sheet must be taken into account to see
           the maximum recording time.</p>
-        <img src="{{ url_for('static', filename='/images/projects/microcontroller.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/microcontroller.jpg') }}"
              class="project-img img-frame">
         <h5 class="mt-4">2.1.5 DAC</h5>
         <p class="mt-0">This stage was designed by means of the digital output sent by the micro and depending on the
           output bits, this stage will transform each digital signal into an output voltage. The DAC that was used was
           the r-2r with resistance values of 470 Ohms for r and 1KOhm for 2r.</p>
-        <img src="{{ url_for('static', filename='/images/projects/dac.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/dac.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">2.1.6 Load stage</h5>
         <p class="mt-0">This stage is made up of a voltage follower and a current amplifier, this was done because what
           the DAC commands does not raise the motors and with this stage they can be raised. The Operational to be used
@@ -200,7 +200,7 @@
         <p class="mt-0">This is one of the final stages in which the input voltage that the motors will receive
           depending on the
           distance was designed.</p>
-        <img src="{{ url_for('static', filename='/images/projects/vibration_dac.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/vibration_dac.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">2.1.8 Voice memory</h5>
         <p class="mt-0">In this stage of the voice memory, through the microcontroller, different outputs to the memory
           were designed in which they depend on the distance of an object, in which the output of the voice memory must
@@ -208,10 +208,10 @@
           This voice memory handles several modalities in which one of them is to work in addressing mode, which
           consists of recording the voice, indicating binary numbers to the inputs, which was the one used for this
           project.</p>
-        <img src="{{ url_for('static', filename='/images/projects/voice_memory.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/voice_memory.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">Design for voice memory</h5>
         <p class="mt-0">Audio recorder distances</p>
-        <img src="{{ url_for('static', filename='/images/projects/voice_dac.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/voice_dac.jpg') }}" class="project-img img-frame">
       </section>
       <section>
         <h1 class="text-center mt-5 text-uppercase">Chapter III. Programming.</h1>
@@ -263,12 +263,12 @@
           components of the circuit that work with different voltages, all this taken from the 9v battery, leading to
           the conclusion of the 7805 regulator for the 5v components (Microcontroller, Sensors, Memory of voice).</p>
         <h5 class="mt-4">Regulator output voltage</h5>
-        <img src="{{ url_for('static', filename='/images/projects/regulator_output.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/regulator_output.jpg') }}"
              class="project-img img-frame">
         <h5 class="mt-4">Microcontroller voltage</h5>
-        <img src="{{ url_for('static', filename='/images/projects/mic_output.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/mic_output.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">Sensors voltage</h5>
-        <img src="{{ url_for('static', filename='/images/projects/sensors_output.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/sensors_output.jpg') }}"
              class="project-img img-frame">
         <h5 class="mt-4">4.1.2 Proximity sensor</h5>
         <p class="mt-0">In this stage, some ultrasonic sensors were carried out, in which at the beginning they had been
@@ -295,7 +295,7 @@
           <li>Calculate the distance value based on the recorded time.</li>
         </ol>
         <h5>Time diagram SRF05</h5>
-        <img src="{{ url_for('static', filename='/images/projects/time_sensor.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/time_sensor.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">4.1.3 Microcontroller</h5>
         <p class="mt-0">In this stage, a program was first designed for the operation of the ultrasonic sensors, later
           the converter program was designed in which depending on the distance at which the sensors are located, which
@@ -307,9 +307,9 @@
           the voltage range with which the vibrating motors work from the minimum to the maximum vibration without being
           damaged. Two tests were done, one at a very close distance and the other not so close.</p>
         <h5>1111 Output</h5>
-        <img src="{{ url_for('static', filename='/images/projects/output_1.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/output_1.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">1000 Output</h5>
-        <img src="{{ url_for('static', filename='/images/projects/output_2.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/output_2.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">4.1.5 Power stage</h5>
         <p class="mt-0">At this stage, we experimented with connecting the motors and sending the DAC ones and zeros for
           the
@@ -337,7 +337,7 @@
         <ol class="ps-5">
           <li>The first step is to name the folder where the files will be saved
             <div>
-              <img src="{{ url_for('static', filename='/images/projects/eagle.jpg') }}" class="project-img img-frame">
+              <img src="{{ url_for('static', filename='/images/projects/hardware/cane/eagle.jpg') }}" class="project-img img-frame">
             </div>
           </li>
           <li>Once the folder was made, the schematic was made first, once the schematic was finished, it was passed to
@@ -349,59 +349,59 @@
         <p class="mt-0">The method used to transfer the circuits to the board was using Couché paper:</p>
         <ol class="ps-5">
           <li>First, the copper bakelite board is cleaned<br>
-            <img src="{{ url_for('static', filename='/images/projects/pcb.jpg') }}" class="project-img img-frame">
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/pcb.jpg') }}" class="project-img img-frame">
           </li>
           <li class="mt-4">The circuit is printed on the Couché paper<br>
-            <img src="{{ url_for('static', filename='/images/projects/printed_circuit.jpg') }}"
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/printed_circuit.jpg') }}"
                  class="project-img img-frame">
           </li>
           <li class="mt-4">Once printed, the ironing begins. First, align the paper with the plate, do not cut the
             baking sheet yet,
             since it is very difficult to keep it from moving when ironing.<br>
-            <img src="{{ url_for('static', filename='/images/projects/ironing.jpg') }}" class="project-img img-frame">
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/ironing.jpg') }}" class="project-img img-frame">
           </li>
           <li class="mt-4">Heat the iron to a little more than half and put it on the paper firmly, not moving the paper
             is very
             important. 2 or 3 passes is enough. If the iron is very hot or you pass over it many times, the tracks are
             deformed or the copper is raised.<br>
-            <img src="{{ url_for('static', filename='/images/projects/ironing_2.jpg') }}" class="project-img img-frame">
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/ironing_2.jpg') }}" class="project-img img-frame">
           </li>
           <li class="mt-4">Check that all the tracks are stuck, one way is to look at the plate against the light in
             which you will
             see that where there is a track it is very bright<br>
-            <img src="{{ url_for('static', filename='/images/projects/ironing_3.jpg') }}" class="project-img img-frame">
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/ironing_3.jpg') }}" class="project-img img-frame">
           </li>
           <li class="mt-4">Then let the copper bakelite board cool with the paper for a few minutes and then put it in a
             container
             with water for 10 minutes.<br>
-            <img src="{{ url_for('static', filename='/images/projects/bakelite.jpg') }}" class="project-img img-frame">
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/bakelite.jpg') }}" class="project-img img-frame">
           </li>
           <li class="mt-4">Then with the tip of a finger the paper is removed.<br>
-            <img src="{{ url_for('static', filename='/images/projects/bakelite_2.jpg') }}"
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/bakelite_2.jpg') }}"
                  class="project-img img-frame">
           </li>
           <li class="mt-4">With a rag you can remove what is missing from the paper<br>
-            <img src="{{ url_for('static', filename='/images/projects/bakelite_3.jpg') }}"
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/bakelite_3.jpg') }}"
                  class="project-img img-frame">
           </li>
           <li class="mt-4">Once done, cut the copper bakelite board<br>
-            <img src="{{ url_for('static', filename='/images/projects/bakelite_4.jpg') }}"
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/bakelite_4.jpg') }}"
                  class="project-img img-frame">
           </li>
           <li class="mt-4">Then the circuit is put into the Ferric Chloride in a container with a trickle of water,
             shaking it until the remaining copper disappears.<br>
-            <img src="{{ url_for('static', filename='/images/projects/bakelite_5.jpg') }}"
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/bakelite_5.jpg') }}"
                  class="project-img img-frame">
           </li>
           <li class="mt-4">Once the copper bakelite board is left, the toner is removed with the blue eraser like
             this<br>
-            <img src="{{ url_for('static', filename='/images/projects/eraser.jpg') }}" class="project-img img-frame">
+            <img src="{{ url_for('static', filename='/images/projects/hardware/cane/eraser.jpg') }}" class="project-img img-frame">
           </li>
         </ol>
         <h5>5.1.3 Final designs</h5>
         <h6 class="mt-4">5.1.3.1 Microcontroller Design, Sensors, Power Stage and Motors</h6>
         <h6>Schematic: Microcontroller, sensors and motors</h6>
-        <img src="{{ url_for('static', filename='/images/projects/schematic.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/schematic.jpg') }}" class="project-img img-frame">
         <p>This is the main circuit since the microcontroller is found, which is the one that makes the changes in the
           memory and the motors, thanks to the information sent by the ultrasonic sensor.</p>
         <p>P1_0 is where the micro sends the pulse to the sensor and also where the sensor sends the information.</p>
@@ -411,35 +411,35 @@
           then goes to the TIP41C which amplifies the current as the motors draw high current.</p>
         <p>In the P2 there is a connection via a flat cable to the Voice Memory inputs.</p>
         <h6 class="mt-4">IC Design</h6>
-        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_2.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/printed_circuit_2.jpg') }}"
              class="project-img img-frame">
         <h6 class="mt-4">MCU Design</h6>
-        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_3.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/printed_circuit_3.jpg') }}"
              class="project-img img-frame">
         <h6 class="mt-4">5.1.3.2 Voice memory</h6>
         <h6>Schematic; Voice memory</h6>
-        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_4.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/printed_circuit_4.jpg') }}"
              class="project-img img-frame">
         <p>The connections made are for the addressing mode in which the recording part is added. The switch found on
           the schematic is to switch to recording mode (low) or playback mode (high).</p>
         <h6>Voice memory IC design</h6>
-        <img src="{{ url_for('static', filename='/images/projects/printed_circuit_5.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/printed_circuit_5.jpg') }}"
              class="project-img img-frame">
         <h3 class="mt-4">Chassis Design and Manufacture</h3>
         <h5 class="mt-4">5.2.1 Basic Structure</h5>
         <p>The design consists of an aluminum pole with connections to the sensor and the chassis mounted on the
           pole.</p>
         <p>The measurements of the cane to be used are as follows:</p>
-        <img src="{{ url_for('static', filename='/images/projects/cane_2.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/cane_2.jpg') }}" class="project-img img-frame">
         <p>The sensor was set at a certain angle so that the cane can be tilted and handled like a normal cane for the
           blind.</p>
-        <img src="{{ url_for('static', filename='/images/projects/cane_3.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/cane_3.jpg') }}" class="project-img img-frame">
         <h5 class="mt-4">5.2.2 Chassis</h5>
         <p class="mt-0">The chassis that contains the PCBs is made of acrylic with epoxy glue.</p>
-        <img src="{{ url_for('static', filename='/images/projects/cane_4.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/cane_4.jpg') }}" class="project-img img-frame">
         <h3 class="mt-4">5.3 Functional test</h3>
         <p class="mt-0">The device was tested by initializing the sensors by checking power on.</p>
-        <img src="{{ url_for('static', filename='/images/projects/cane_5.jpg') }}" class="project-img img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/cane_5.jpg') }}" class="project-img img-frame">
         <p>In the handle, the motors were tested, thus having a satisfactory response.</p>
         <p class="mt-0">Using headphones, the sound was checked, having a good response, as with the motors.</p>
         <p class="mt-0">NOTE: The last two tests could not be verified through images since the sense of touch and
@@ -469,7 +469,7 @@
           <li>In the event of a device failure, press the sensor activation button again.</li>
           <li>To turn off the device, switch the main switch to off mode.</li>
         </ol>
-        <img src="{{ url_for('static', filename='/images/projects/cane_6.jpg') }}" class="project-img mt-3 img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/hardware/cane/cane_6.jpg') }}" class="project-img mt-3 img-frame">
         <h3 class="mt-4">6.3 Maintenance and Assembly Manual</h3>
         <h5 class="mt-4">When the battery is low.</h5>
         <ol class="ps-5">
