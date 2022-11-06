@@ -10,16 +10,18 @@ basedir = path.abspath(path.dirname(__file__))
 load_dotenv(path.join(basedir, '.env'))
 
 class Config:
-    """Base codnfig"""
+    """Base config"""
     SECRET_KEY = environ.get('SECRET_KEY')
-    TESTING = True
-    DEBUG = True
-    FLASK_ENV = 'development'
+    SESSION_COOKIE_NAME = environ.get('SESSION_COOKIE_NAME')
+    STATIC_FOLDER = 'static'
+    TEMPLATES_FOLDER = 'templates'
 
 class DevConfig:
-    pass
+    FLASK_ENV = 'development'
+    DEBUG = True
+    TESTING = True
 
 class ProdConfig:
-    pass
-
-
+    FLASK_ENV = 'production'
+    DEBUG = False
+    TESTING = False

@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
+app.config.from_object('config.DevConfig')
 
 app.config['DATABASE_URI'] = 'sqlite://///home/ivan/Projects/website/blog.db'
 db = SQLAlchemy(app)
