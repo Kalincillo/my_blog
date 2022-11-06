@@ -2,14 +2,11 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-
-# DEBUG MODE
-app.config['ENV'] = 'development'
-app.config['DEBUG'] = True
-app.config['TESTING'] = True
+app.config.from_object('config.Config')
 
 app.config['DATABASE_URI'] = 'sqlite://///home/ivan/Projects/website/blog.db'
 db = SQLAlchemy(app)
+
 
 
 @app.route('/')
