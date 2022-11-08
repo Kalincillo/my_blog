@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+from formas import ContactForm
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
@@ -44,6 +45,7 @@ def software():
 
 @app.route('/contact')
 def contact():
+    # form = ContactForm()
     return render_template('contact.html')
 
 @app.route('/cane')
