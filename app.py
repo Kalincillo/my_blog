@@ -45,7 +45,8 @@ def contact():
     form = ContactForm()
     if form.validate_on_submit():
         return redirect(url_for("success"))
-    return render_template('contact.html')
+    return render_template('contact2.html', form=form, template="form-template")
+
 
 
 @app.route('/cane')
