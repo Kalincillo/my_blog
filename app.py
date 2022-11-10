@@ -40,12 +40,12 @@ def software():
     return render_template('software.html')
 
 
-@app.route('/contact', methods=["GET", "POST"])
+@app.route('/contact2', methods=["GET", "POST"])
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        return redirect(url_for("success"))
-    return render_template('contact2.html', form=form, template="form-template")
+        return redirect(url_for("index"))
+    return render_template('contact2.html', form=form)
 
 
 
