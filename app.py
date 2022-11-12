@@ -45,11 +45,8 @@ def software():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        print("success")
-        return redirect(url_for("https://www.youtube.com/"))
-    print("success2")
+        return redirect(url_for("index"))
     return render_template('contact2.html', form=form)
-
 
 
 @app.route('/cane')

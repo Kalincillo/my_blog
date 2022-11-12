@@ -515,6 +515,10 @@ footer .copyright {
     background: linear-gradient(15deg, black, #c2a975, black);
 }
 
+.form-button-color > input {
+    background: linear-gradient(15deg, black, darkcyan, black);
+}
+
 .jumbo {
     object-fit: cover;
 

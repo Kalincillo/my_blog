@@ -23,6 +23,7 @@ class DevConfig:
     TESTING = True
 
 
+
 class ProdConfig:
     FLASK_ENV = 'production'
     DEBUG = False
