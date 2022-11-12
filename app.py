@@ -1,6 +1,7 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from flask_sqlalchemy import SQLAlchemy
 from formas import ContactForm
+import smtplib
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
@@ -44,7 +45,9 @@ def software():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        return redirect(url_for("index"))
+        print("success")
+        return redirect(url_for("https://www.youtube.com/"))
+    print("success2")
     return render_template('contact2.html', form=form)
 
 
