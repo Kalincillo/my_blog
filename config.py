@@ -1,10 +1,6 @@
 from os import environ, path
 from dotenv import load_dotenv
 
-TESTING = True
-DEBUG = True
-FLASK_ENV = 'development'
-
 basedir = path.abspath(path.dirname(__file__))
 load_dotenv(path.join(basedir, '.env'))
 
@@ -16,6 +12,10 @@ class Config:
     STATIC_FOLDER = 'static'
     TEMPLATES_FOLDER = 'templates'
 
+    @staticmethod
+    def init_app(app):
+        pass
+
 
 class DevConfig:
     FLASK_ENV = 'development'
@@ -23,8 +23,14 @@ class DevConfig:
     TESTING = True
 
 
-
 class ProdConfig:
     FLASK_ENV = 'production'
     DEBUG = False
     TESTING = False
+
+
+config = {
+    'default': Config,
+    'development': DevConfig,
+    'production': ProdConfig
+}

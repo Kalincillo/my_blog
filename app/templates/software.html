@@ -8,7 +8,7 @@
       <div class="card">
         <img src="{{ url_for('static', filename='images/projects/software/quixote.jpg') }}" class="card-img-top" alt="...">
         <div class="card-body" id="project-title">
-          <a href="{{ url_for('wordcloud') }}" class="card-title text-black">
+          <a href="{{ url_for('.wordcloud') }}" class="card-title text-black">
             <h5 class="card-title text-black">Don Quixote WordCloud</h5>
           </a>
           <p class="card-text text-white mt-0">Word cloud created with the spanish version of Don Quixote</p>
@@ -29,7 +29,7 @@
       <div class="card">
         <img src="{{ url_for('static', filename='images/projects/software/27s.jpg') }}" class="card-img-top" alt="...">
         <div class="card-body" id="project-title">
-          <a href="{{ url_for('music_and_death') }}" class="card-title text-black">
+          <a href="{{ url_for('.music_and_death') }}" class="card-title text-black">
             <h5 class="card-title text-black">Music & Death</h5>
           </a>
           <p class="card-text text-white mt-0"> Data science project where we analyze if there is

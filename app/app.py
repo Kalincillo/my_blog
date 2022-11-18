@@ -1,14 +1,10 @@
 from flask import Flask, render_template, redirect, url_for, request
-from flask_sqlalchemy import SQLAlchemy
 from formas import ContactForm
-import smtplib
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
 app.config.from_object('config.DevConfig')
 
-app.config['DATABASE_URI'] = 'sqlite://///home/ivan/Projects/website/blog.db'
-db = SQLAlchemy(app)
 
 
 @app.route('/')
