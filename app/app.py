@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request
-from formas import ContactForm
+# from formas import ContactForm
+from
 
 app = Flask(__name__)
 app.config.from_object('config.Config')

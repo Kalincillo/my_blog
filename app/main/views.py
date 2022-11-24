@@ -1,7 +1,8 @@
 from flask import render_template, redirect, url_for
 from . import main
 from formas import ContactForm
-
+# from forms import ContactForm2
+from .forms import ContactForm2
 
 @main.route('/')
 def index():
@@ -35,9 +36,9 @@ def software():
 
 @main.route('/contact2', methods=["GET", "POST"])
 def contact():
-    form = ContactForm()
+    form = ContactForm2()
     if form.validate_on_submit():
-        return redirect(url_for("index"))
+        return redirect(url_for("main.index"))
     return render_template('contact2.html', form=form)
 
 
