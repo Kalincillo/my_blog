@@ -64,3 +64,12 @@ def pedal():
 @main.route('/rudi')
 def rudi():
     return render_template('rudi.html')
+
+@main.route('/burger')
+def burger():
+    return render_template('burger.html')
+
+
+@main.route('/strength')
+def strength():
+    return render_template('strength.html')

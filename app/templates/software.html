@@ -5,8 +5,9 @@
   <!-- Gallery -->
   <div class="row row-cols-1 row-cols-md-2 g-4" id="project-title">
     <div class="col">
-      <div class="card">
-        <img src="{{ url_for('static', filename='images/projects/software/quixote.jpg') }}" class="card-img-top" alt="...">
+      <div class="card h-100 w-100">
+        <img src="{{ url_for('static', filename='images/projects/software/quixote.jpg') }}" class="card-img-top"
+             alt="...">
         <div class="card-body" id="project-title">
           <a href="{{ url_for('.wordcloud') }}" class="card-title text-black">
             <h5 class="card-title text-black">Don Quixote WordCloud</h5>
@@ -16,17 +17,22 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card h-100 w-100">
         <img src="{{ url_for('static', filename='images/projects/software/arnold.jpg') }}" class="card-img-top"
              alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-black">GUI Powerbuilding program creator</h5>
-          <p class="card-text text-white mt-0">App created to create a program depending on your level and strength</p>
+        <div class="card-body" id="project-title">
+          <a href="{{ url_for('.strength') }}" class="card-title text-black">
+            <h5 class="card-title text-black">KIVY Strength training APP
+              <strong class="text-warning">(in development)</strong>
+            </h5>
+          </a>
+          <p class="card-text text-white mt-0">App created to create a program depending on your level and
+            strength</p>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card h-100 w-100">
         <img src="{{ url_for('static', filename='images/projects/software/27s.jpg') }}" class="card-img-top" alt="...">
         <div class="card-body" id="project-title">
           <a href="{{ url_for('.music_and_death') }}" class="card-title text-black">
@@ -39,15 +45,18 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card h-100 w-100">
         <img src="{{ url_for('static', filename='images/projects/software/burger.png') }}" class="card-img-top"
              alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-black">ZMG Best burger places</h5>
+        <div>
+          <a href="{{ url_for('.burger') }}" class="card-title text-black">
+            <h5 class="card-title text-black">R programming best restaurant finder</h5>
+          </a>
           <p class="card-text text-white mt-0">Data science project in R with a Google maps API to find the best places
             where you can go to eat burgers</p>
         </div>
       </div>
     </div>
+  </div>
   </div>
 {% endblock %}
