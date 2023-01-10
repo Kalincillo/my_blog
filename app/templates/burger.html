@@ -1,2 +1,25 @@
 {% extends "base.html" %}
 
+{% block content %}
+  <div class="container text-white">
+    <div class="row">
+      <h1 class="display-2">R Programming Best Restaurants finder</h1>
+      <h3 class="mt-3">GOOGLE API</h3>
+      <p>In this case, the Google API will be used by creating an account in
+        <a href="https://cloud.google.com/" class="text-white" target="_blank">GoogleCloud</a> In this case it is
+        intended to find the best hamburger places in my hometown Guadalajara and its surrounding areas; in this case
+        called ZMG (Guadalajara Metropolitan Area) which are made up of Guadalajara, Zapopan, Tlaquepaque, Tonala, El
+        Salto and Tlajomulco.
+      </p>
+      <p>By creating the Google Cloud account you are entitled to a fee of 5800 Mexican pesos, which is the equivalent
+        of about 20,000 searches using google maps, so it is enough to do the searches.</p>
+      <p>The API is limited to 60 places in the search divided into parts of 20, so you must be specific in the area to
+        search and not put such a large radius since you will end up skipping places, that is why you must take the most
+        central point of each city without actually touching parts of the surrounding city.</p>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}
