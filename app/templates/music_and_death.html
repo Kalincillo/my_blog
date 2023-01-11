@@ -35,7 +35,8 @@
           obtaining drugs</p>
         <p>I started from scratch collecting data about musicians who have died unnaturally, young or in strange ways in
           a sql table to later normalize it and have all the data structured for future projects.</p>
-        <img src="{{ url_for('static', filename='/images/projects/software/music_death/music_db.jpg') }}" class="img-frame project-img mt-3">
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/music_db.jpg') }}"
+             class="img-frame project-img mt-3">
         <p>The data cleaning process is about minimizing beforehand to make the job easier in the future</p>
         <h5>Cities, states and countries tables</h5>
         <p class="mt-0">We will use the city, state and country tables to be able to separate each artist by their
@@ -45,6 +46,23 @@
              class="img-frame project-img mt-2">
         <p>We will normalize the table birth to have each artist separate by their birthplace</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/birth.jpg') }}"
+             class="img-frame project-img mt-2">
+        <p>We finished wit this tables</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/tables.jpg') }}"
+             class="img-frame project-img mt-2">
+      </section>
+      <section class="mt-4">
+        <h3>Jupyter notebook</h3>
+        <p class="mt-0">After normalizing the tables we proceed to connect the database with Jupyter notebook to be able
+          to do the analysis with the help of pandas libraries, matplotlib.</p>
+        <h3>Install required libraries</h3>
+        <p class="mt-0">We begin with the installation of the necessary libraries to be able to connect Mysql and for
+          the environment
+          variables</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/installation.jpg') }}"
+             class="img-frame project-img mt-2">
+        <p>Now we import the necessary libraries for data analysis, graphing and connecting the database</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/libraries.jpg') }}"
              class="img-frame project-img mt-2">
       </section>
 
