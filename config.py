@@ -25,9 +25,10 @@ class DevConfig:
 
 class ProdConfig:
     SECRET_KEY = environ.get('SECRET_KEY')
-    FLASK_ENV = 'production'
-    DEBUG = False
-    TESTING = False
+    #FLASK_ENV = 'production'
+    #DEBUG = False
+    #TESTING = False
+
 
 
 config = {
