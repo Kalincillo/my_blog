@@ -132,6 +132,40 @@
         <p>Finally we have our file with all the necessary data already cleaned.</p>
         <img src="{{ url_for('static', filename='/images/projects/software/burger/csv_2.png') }}"
              class="img-frame project-img mt-2">
+        <p>We continue with the same process for the other cities but we have a spceial cases in the next results so we
+          need to handle each one</p>
+        <h3>Special cases</h3>
+        <h5>Extra column</h5>
+        <p class="mt-0">When we do the same process for Zapopan, the last 20 results return an extra column that, if we
+          do not handle it correctly, will give us an error when we want to join the 60 results.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/columns.png') }}"
+             class="img-frame project-img mt-2">
+        <p>We can see that in the third result we have an extra column called permanently_closed to get rid of it simply
+          when doing the union we make a slide choosing only the necessary columns in this case from 1 to 16.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/slide.jpg') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Unwanted values and user ratings</h5>
+        <p class="mt-0">We proceed as with Guadalajara to reduce the data but in this case we can see when we see the
+          addresses obtained that some places with an address in Guadalajara were filtered.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/filter.png') }}"
+             class="img-frame project-img mt-2">
+        <p>We will use the filter() function in which the first parameter is the data frame to filter and as a second
+          the condition in which we will use the grepl function that looks for patterns or words here we will give the
+          word Guadalajara and we will use the negation with this we indicate that it only returns the places that do
+          not contain the word Guadalajara, also in the same filter we will use & to tell the filter function to return
+          the places with more than 50 reviews since zapopan has an average number of reviews lower than Guadalajara</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/filter_2.png') }}"
+             class="img-frame project-img mt-2">
+        <p>By doing this our results are reduced to 16</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/filter_3.png') }}"
+             class="img-frame project-img mt-2">
+        <p>Now we proceed with what has already been done previously, reduce to the best 10 results, get rid of the
+          unnecessary columns and write the data in a .csv file to be able to use them later, which leaves us with the
+          following result.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/zap_results.png') }}"
+             class="img-frame project-img mt-2">
+        <p>We continue with the same process for the other cities cleaning the unwanted filtered places and reordering
+          the columns</p>
 
       </section>
     </div>
