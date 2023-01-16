@@ -76,6 +76,62 @@
         <img src="{{ url_for('static', filename='/images/projects/software/burger/search_2.png') }}"
              class="img-frame project-img mt-2">
         <p>we repeat the same process for a third search with the new generated token</p>
+        <h5 class="mt-4">Join results</h5>
+        <p class="mt-0">The next step is to join the 3 results obtained in parts of 20 using the rows_append function,
+          since the columns that it returns are the same with the exception of some cases in which an extra column is
+          returned, but we will talk about it later, to obtain the results. It is necessary to go down an extra level up
+          to the dollar symbol, thus entering the data frame of the results. In the same filter that we will do through
+          pipe, we will use the filter function to get rid of the places obtained with few reviews, in this case we will
+          only leave those with more than 100 and finally we will convert the list into a data frame.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/append.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Glimpse</h5>
+        <p class="mt-0">we can get a summary of the columns obtained using the glimpse() function</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/glimpse.png') }}"
+             class="img-frame project-img mt-2">
+        <p>In total there are 16 columns with information about each place from its name to the opening and closing
+          times, but the ones that interest us are name(Name of the place), formatted_address(Address of the place),
+          geometry(from which we will obtain only latitude and length), rating(which is the average score given by the
+          reviews of people with 5 being the best) and user_ratings_total(total people who have left a review)</p>
+        <h5 class="mt-4">Place names</h5>
+        <p class="mt-0">after filtering the places with the most reviews our total number of places changes from 60 to
+          only 26</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/filter_1.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Top 10</h5>
+        <p class="mt-0">now we will sort this data by rating in descending mode using the arrange function and using the
+          rating column and then we will filter only the best 10 places found by head() choosing 10 as parameter</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/top_10.png') }}"
+             class="img-frame project-img mt-2">
+        <p>The result gives us the best 10 places according to the public, ordered from best to worst.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/top_10-2.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Locations</h5>
+        <p class="mt-0">the next step is to get the latitudes and longitudes of each location by extracting them from
+          gdl$geometry$location</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/locations.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Cleaning data</h5>
+        <p class="mt-0">The next step is to remove the unnecessary columns, this can be achieved by using the subset
+          function and with the columns previously stored in the keeps variable in the form of a vector.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/clean.png') }}"
+             class="img-frame project-img mt-2">
+        <p>the result can be seen with the glimpse function</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/clean_2.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Append locations</h5>
+        <p class="mt-0">Finally we add the coordinates previously extracted with the cbind function with which we join
+          the data frame already obtained with locations_gdl to later order the columns so that the name remains as the
+          first column</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/clean_3.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Save in CSV file</h5>
+        <p class="mt-0">Finally we save in a .csv file to be able to continue with the following cities.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/csv.png') }}"
+             class="img-frame project-img mt-2">
+        <p>Finally we have our file with all the necessary data already cleaned.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/csv_2.png') }}"
+             class="img-frame project-img mt-2">
 
       </section>
     </div>
