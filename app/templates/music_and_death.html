@@ -64,6 +64,18 @@
         <p>Now we import the necessary libraries for data analysis, graphing and connecting the database</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/libraries.jpg') }}"
              class="img-frame project-img mt-2">
+        <h3 class="mt-4">Database login</h3>
+        <p class="mt-0">Next we import the host, name of database and password of MySql, saved in a separate .env file
+          to protect the
+          data from corruption, we use the library dotenv and the function load_dotenv() previously loaded to do this
+          automatically</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/environment.png') }}"
+             class="img-frame project-img mt-2">
+        <h3 class="mt-4">Connect to the database</h3>
+        <p class="mt-0">To connect to the database we will use Try: to prevent a failed connection and the function
+          mysql.connector.connect() which as arguments will give the connection values previously loaded with
+          load_env()</p>
+        <p>connection.is_connected() is a function that helps us to know if the connection was successful</p>
       </section>
 
     </div>
