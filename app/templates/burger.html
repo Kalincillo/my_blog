@@ -166,6 +166,40 @@
              class="img-frame project-img mt-2">
         <p>We continue with the same process for the other cities cleaning the unwanted filtered places and reordering
           the columns</p>
+        <h3>Join csv files</h3>
+        <p class="mt-0">In a separate file in this case called places_handling.R we will read the 6 previously generated
+          csv files
+          using the read.csv function and then bind them using the bind_row() function to save it in a new variable
+          called zmg_csv</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/bind_csv.png') }}"
+             class="img-frame project-img mt-2">
+        <p>Finally we will do the same process done before where we order by value in the reviews and reorder the
+          columns to have our final result and we will save it in a new csv</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/final_result.png') }}"
+             class="img-frame project-img mt-2">
+        <h3 class="mt-4">Mapping</h3>
+        <p class="mt-0">Thanks to the googleway library we can use one of its functions to create interactive maps in
+          this case the function is called google_map()</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/map.png') }}"
+             class="img-frame project-img mt-2">
+        <p>We will only use the parameters "data" to which we will give the value of our final csv, "key" which is our
+          Google API key protected in .Renviron, "location" to which we will give the value in which we want to center
+          the map In this case, they will be the coordinates of Guadalajara since the other cities are adjacent to it.
+          Finally, "zoom" that will be given a value of 12 to be able to appreciate all the points in the area.</p>
+        <p>We will also use the add_markers() function to give the values "lat", "lon" to which we will give the values
+          of latitude and longitude of each of the places found and by means of the parameter "mouse_over" the value of
+          the name of the places so that when the mouse is placed on the marker we can interactively observe the name of
+          the place</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/marker.png') }}"
+             class="img-frame project-img mt-2">
+        <h3 class="mt-4">Final result</h3>
+        <p>After running the mapping function:</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/map_2.png') }}"
+             class="img-frame project-img mt-2">
+        <p>We obtain the following interactive map with all the places found in which when we put the mouse over the
+          marker we can see the name of each place</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/burger/map_3.png') }}"
+             class="img-frame project-img mt-2">
 
       </section>
     </div>
