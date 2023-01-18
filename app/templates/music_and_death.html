@@ -76,6 +76,20 @@
           mysql.connector.connect() which as arguments will give the connection values previously loaded with
           load_env()</p>
         <p>connection.is_connected() is a function that helps us to know if the connection was successful</p>
+        <p>If the connection is correct we will print "Succes Connected", and using pandas and its read_sql_query
+          function we can create queries in the same way as in sql with which we will read the data from the database
+          and extract all the tables individually to later manage and clean the necessary data.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/connect.png') }}"
+             class="img-frame project-img mt-2">
+        <h3 class="mt-4">Join tables</h3>
+        <p>In the same Try function: by means of else that is executed we will always join all the tables previously
+          read in the same dataframe, with the pandas concat function we can add a new column choosing axis=1 and with
+          the merge function we will join the tables that have the same column to join equivalents and we'll get rid of
+          the duplicate columns for the end sort the columns by means of iloc.</p>
+        <p>Finally we close the connection since the data to be used is saved in a new dataframe</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/merge.png') }}"
+             class="img-frame project-img mt-2">
+
       </section>
 
     </div>
