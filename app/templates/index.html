@@ -1,13 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div>
-    <picture>
-      <img src="{{ url_for('static', filename='images/index/ivan.jpg') }}" class="mx-auto d-block img-fluid">
+  <div style="background-color: black" class="rounded">
+    <div class="rounded text-center text-white" style="background-color: black">
+      <h1 class="mt-3">OSCAR DE LA CRUZ</h1>
+      <h2 class="mt-4">ELECTRONICS ENGINEER <span style="color: darkcyan">|</span> DATA SCIENTIST <span
+        style="color: darkcyan">|</span> MUSICIAN</h2>
+      <p class="mb-0 pb-0">
+        <a class="btn btn-primary rounded-4 button-color" href="{{ url_for('.projects') }}">PROJECTS</a>
+      </p>
+    </div>
+    <picture class="mt-0 pt-0">
+      <img src="{{ url_for('static', filename='images/index/ivan.jpg') }}" class="rounded img-fluid">
     </picture>
 
   </div>
-
 
 {% endblock %}
 
