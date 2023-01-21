@@ -33,12 +33,12 @@ def software():
     return render_template('software.html')
 
 
-@main.route('/contact', methods=["GET", "POST"])
-def contact():
-    form = ContactForm()
-    if form.validate_on_submit():
-        return redirect(url_for("main.index"))
-    return render_template('contact.html', form=form)
+# @main.route('/contact', methods=["GET", "POST"])
+# def contact():
+#     form = ContactForm()
+#     if form.validate_on_submit():
+#         return redirect(url_for("main.index"))
+#     return render_template('contact.html', form=form)
 
 
 @main.route('/cane')
