@@ -24,114 +24,119 @@
   {% endblock %}
 </head>
 <body style="background-image: url({{ url_for('static', filename='images/cover.jpg') }})">
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"
-     style="background: linear-gradient(15deg, black, #c2a975, black);">
-  <div class="container" id="page-container">
-    <a class="navbar-brand" href="{{ url_for('main.index') }}">HOME</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="{{ url_for('main.projects') }}">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('main.music') }}">Music</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('main.about') }}">About</a>
-        </li>
-{#        <li class="nav-item">#}
-{#          <a class="nav-link" href="{{ url_for('main.contact') }}">Contact</a>#}
-{#        </li>#}
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Page Header -->
-<header class="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="site-heading">
+<div id="page-container">
+  <div id="content-wrap">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"
+         style="background: linear-gradient(15deg, black, #c2a975, black);">
+      <div class="container" id="page-container">
+        <a class="navbar-brand" href="{{ url_for('main.index') }}">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('main.projects') }}">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('main.music') }}">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('main.about') }}">About</a>
+            </li>
+            {#        <li class="nav-item">#}
+            {#          <a class="nav-link" href="{{ url_for('main.contact') }}">Contact</a>#}
+            {#        </li>#}
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        {% block content %}
+        {% endblock %}
+      </div>
     </div>
-  </div>
-</header>
 
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    {% block content %}
-    {% endblock %}
-  </div>
-</div>
+    <hr>
 
-<hr>
-
-<!-- Footer -->
-<footer class="text-center container-fluid fixed-bottom" style="background: linear-gradient(15deg, black, #c2a975, black)">
-  <div class="p-2 pb-0 row">
-    <!-- Contact -->
-    <div class="text-white col-lg-3 text-lg-start col-md-12 text-md-center">
-      <strong>
-        CONTACT
-      </strong>
-      <div>
+    <!-- Footer -->
+    <footer class="text-center"
+            style="background: linear-gradient(15deg, black, #c2a975, black)" id="footer">
+      <div class="p-2 pb-0 row">
+        <!-- Contact -->
+        <div class="text-white col-lg-3 text-lg-start col-md-12 text-md-center">
+          <strong>
+            CONTACT
+          </strong>
+          <div>
             <span style="font-size: 15px">
               oscar_delacruz19@hotmail.com
             </span>
+          </div>
+        </div>
+        <!-- Logo -->
+        <div class="content col-lg-6 justify-content-lg-start d-none d-lg-block">
+          <a href="http://www.youtube.com" target="_blank" id="logo">
+            <img class="rounded-circle rounded-lg mb-3 border border-dark" id="logo-img"
+                 src="{{ url_for('static', filename='/images/guitar.jpg') }}">
+          </a>
+        </div>
+        <section class="col-lg-3 mb-2 justify-content-lg-end">
+          <!-- LinkedIn -->
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #0082ca;"
+            href="https://www.linkedin.com/in/oscar-ivan-de-la-cruz-perez-57bab01ab" target="_blank"
+            role="button"><i class="fab fa-linkedin"></i>
+          </a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #333333;"
+            href="https://github.com/Kalincillo"
+            role="button" target="_blank"><i class="fab fa-github"></i>
+          </a>
+          <!-- Youtube -->
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #c4302b;"
+            href="https://www.youtube.com/user/kalincillo" target="_blank"
+            role="button"><i class="fab fa-youtube"></i>
+          </a>
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary m-1"
+            style="background-color: #55ACEE;"
+            href="https://mobile.twitter.com/Kalincillo" target="_blank"
+            role="button"><i class="fab fa-twitter"></i>
+          </a>
+        </section>
       </div>
-    </div>
-    <!-- Logo -->
-    <div class="content col-lg-6 justify-content-lg-start d-none d-lg-block">
-      <a href="http://www.youtube.com" target="_blank" id="logo">
-        <img class="rounded-circle rounded-lg mb-3 border border-dark" id="logo-img"
-             src="{{ url_for('static', filename='/images/guitar.jpg') }}">
-      </a>
-    </div>
-    <section class="col-lg-3 mb-2 justify-content-lg-end">
-      <!-- LinkedIn -->
-      <a
-        class="btn btn-primary m-1"
-        style="background-color: #0082ca;"
-        href="https://www.linkedin.com/in/oscar-ivan-de-la-cruz-perez-57bab01ab" target="_blank"
-        role="button"><i class="fab fa-linkedin"></i>
-      </a>
-      <!-- Github -->
-      <a
-        class="btn btn-primary m-1"
-        style="background-color: #333333;"
-        href="https://github.com/Kalincillo"
-        role="button" target="_blank"><i class="fab fa-github"></i>
-      </a>
-      <!-- Youtube -->
-      <a
-        class="btn btn-primary m-1"
-        style="background-color: #c4302b;"
-        href="https://www.youtube.com/user/kalincillo" target="_blank"
-        role="button"><i class="fab fa-youtube"></i>
-      </a>
-      <!-- Twitter -->
-      <a
-        class="btn btn-primary m-1"
-        style="background-color: #55ACEE;"
-        href="https://mobile.twitter.com/Kalincillo" target="_blank"
-        role="button"><i class="fab fa-twitter"></i>
-      </a>
-    </section>
+      <div class="text-center py-1 text-white" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright
+      </div>
+    </footer>
   </div>
-  <div class="text-center py-1 text-white" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2023 Copyright
-  </div>
-</footer>
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
