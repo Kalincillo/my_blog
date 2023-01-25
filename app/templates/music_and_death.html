@@ -82,13 +82,37 @@
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/connect.png') }}"
              class="img-frame project-img mt-2">
         <h3 class="mt-4">Join tables</h3>
-        <p>In the same Try function: by means of else that is executed we will always join all the tables previously
+        <p class="mt-0">In the same Try function: by means of else that is executed we will always join all the tables
+          previously
           read in the same dataframe, with the pandas concat function we can add a new column choosing axis=1 and with
           the merge function we will join the tables that have the same column to join equivalents and we'll get rid of
           the duplicate columns for the end sort the columns by means of iloc.</p>
         <p>Finally we close the connection since the data to be used is saved in a new dataframe</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/merge.png') }}"
              class="img-frame project-img mt-2">
+        <h3 class="mt-4">Merge cities, states & countries tables</h3>
+        <p class="mt-0">In this section we will join the tables of the localities so that each city id coincides with
+          its respective state and country and identify the place of birth of each musician.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/cities.jpg') }}"
+             class="img-frame">
+        <h3 class="mt-4">Drop columns</h3>
+        <p class="mt-0">In this section we will eliminate the columns that are not necessary for our investigation, such
+          as the identifiers of each type of cause of death, musical genre or date of birth and death.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/drop.jpg') }}"
+             class="img-frame">
+        <h3 class="mt-4">Merge dataframes</h3>
+        <p class="mt-0">Now we have 2 dataframes one with the musicians information and one with the cities</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/musician_inf.jpg') }}"
+             class="img-frame">
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/cities_inf.jpg') }}"
+             class="img-frame mt-4">
+        <p>Now we will join them so that each identifier of the city of birth of the musicians is joined with the table
+          of cities</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/merge_mc.jpg') }}"
+             class="img-frame">
+        <p>Now we can look at the two joined tables</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/joined.jpg') }}"
+             class="img-frame">
 
       </section>
 
