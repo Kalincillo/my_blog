@@ -23,7 +23,8 @@
     <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
   {% endblock %}
 </head>
-<body style="background-image: url({{ url_for('static', filename='images/cover.jpg') }})" class="d-flex flex-column min-vh-100">
+<body style="background-image: url({{ url_for('static', filename='images/cover.jpg') }})"
+      class="d-flex flex-column min-vh-100">
 <div class="flex-wrapper" id="page-container">
   <div id="content-wrap">
     <!-- Navigation -->
@@ -88,9 +89,9 @@
           CONTACT
         </strong>
         <div>
-            <span style="font-size: 15px">
-              oscar_delacruz19@hotmail.com
-            </span>
+          <a class="text-white" style="text-decoration: none" href="mailto:oscar_delacruz19@hotmail.com">
+            oscar_delacruz19@hotmail.com
+          </a>
         </div>
       </div>
       <!-- Logo -->
