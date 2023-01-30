@@ -6,6 +6,32 @@
   <div class="row row-cols-1 row-cols-md-2 g-4" id="project-title">
     <div class="col">
       <div class="card h-100 w-100">
+        <img src="{{ url_for('static', filename='images/projects/software/27s.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body" id="project-title">
+          <a href="{{ url_for('.music_and_death') }}" class="card-title text-black">
+            <h5 class="card-title text-black">Music & Death</h5>
+          </a>
+          <p class="card-text text-white mt-0"> Data science project where we analyze if there is
+            a relationship between the life of a musicians and
+            their not natural deaths</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 w-100">
+        <img src="{{ url_for('static', filename='images/projects/software/burger.png') }}" class="card-img-top"
+             alt="...">
+        <div>
+          <a href="{{ url_for('.burger') }}" class="card-title text-black">
+            <h5 class="card-title text-black">R programming best restaurant finder</h5>
+          </a>
+          <p class="card-text text-white mt-0">Data science project in R with a Google maps API to find the best places
+            where you can go to eat burgers</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 w-100">
         <img src="{{ url_for('static', filename='images/projects/software/quixote.jpg') }}" class="card-img-top"
              alt="...">
         <div class="card-body" id="project-title">
@@ -31,32 +57,5 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100 w-100">
-        <img src="{{ url_for('static', filename='images/projects/software/27s.jpg') }}" class="card-img-top" alt="...">
-        <div class="card-body" id="project-title">
-          <a href="{{ url_for('.music_and_death') }}" class="card-title text-black">
-            <h5 class="card-title text-black">Music & Death</h5>
-          </a>
-          <p class="card-text text-white mt-0"> Data science project where we analyze if there is
-            a relationship between the life of a musicians and
-            their not natural deaths</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100 w-100">
-        <img src="{{ url_for('static', filename='images/projects/software/burger.png') }}" class="card-img-top"
-             alt="...">
-        <div>
-          <a href="{{ url_for('.burger') }}" class="card-title text-black">
-            <h5 class="card-title text-black">R programming best restaurant finder</h5>
-          </a>
-          <p class="card-text text-white mt-0">Data science project in R with a Google maps API to find the best places
-            where you can go to eat burgers</p>
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
 {% endblock %}
