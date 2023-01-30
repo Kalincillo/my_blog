@@ -160,6 +160,22 @@
              class="img-frame project-img mt-2">
         <h1 class="mt-5">Causes</h1>
         <p class="mt-0">Now we will see the main causes of death in each musical genre</p>
+        <p>First we create a new dataframe using the genre, cause columns and use the value_counts method to count the
+          total deaths for each.</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/cause_genre.png') }}"
+             class="img-frame project-img mt-2">
+        <p>We do a reset to the index to be able to rename the death count column</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/cause_genre_2.png') }}"
+             class="img-frame project-img mt-2">
+        <p>Filter only blues cases</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/blues_causes.png') }}"
+             class="img-frame project-img mt-2">
+        <p>Plot the data</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/blues_causes_2.png') }}"
+             class="img-frame project-img mt-2">
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/blues_causes_bar.png') }}"
+             class="img-frame project-img mt-2">
+
 
       </section>
 
