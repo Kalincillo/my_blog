@@ -5,8 +5,11 @@
   <div class="container text-white">
     <div class="row">
       <h1 class="display-2">Music & Death</h1>
+      <h3 class="mt-4">Repository Github</h3>
+      <p><a href="https://github.com/Kalincillo/data_science_music_and_death" class="text-info" target="_blank">
+        Restaurant finder</a></p>
       <section>
-        <h3 class="mt-5">Objective</h3>
+        <h3 class="mt-2">Objective</h3>
         <p class="mt-0">The main objective of this research is to investigate if there is any relationship between being
           a
           professional musician and deaths from unnatural causes (A death from natural causes is the result of a disease
@@ -167,16 +170,39 @@
         <p>We do a reset to the index to be able to rename the death count column</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/cause_genre_2.png') }}"
              class="img-frame project-img mt-2">
-        <p>Filter only blues cases</p>
+        <h5 class="mt-4">BLUES</h5>
+        <p class="mt-0">Filter only blues cases</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/blues_causes.png') }}"
              class="img-frame project-img mt-2">
         <p>Plot the data</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/blues_causes_2.png') }}"
-             class="img-frame project-img mt-2">
+             class="img-frame project-img mt-2"><br>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/blues_causes_bar.png') }}"
              class="img-frame project-img mt-2">
-
-
+        <h5 class="mt-4">ROCK</h5>
+        <p class="mt-0">graph using the previous method but filtering the rock musicians</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/rock_cause.png') }}"
+             class="img-frame project-img mt-2">
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/rock_cause_2.png') }}"
+             class="img-frame project-img mt-2">
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/rock_cause_bar.png') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">JAZZ</h5>
+        <p class="mt-0">Do the same with Jazz</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/jazz_cause_bar.png') }}"
+             class="img-frame project-img mt-2">
+        <p>You can plot the other genres, but we need more data, so we leave it for when we have gathered more
+          information from musicians</p>
+        <h3>Common cause of deaths</h3>
+        <p class="mt-0">We will use the cause column and value_counts on all genera and nlargest for the 10 most
+          common</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/common_causes.png') }}"
+             class="img-frame project-img mt-2">
+        <p>And plot the data</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/common_causes_2.png') }}"
+             class="img-frame project-img mt-2">
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/common_causes_bar.png') }}"
+             class="img-frame project-img mt-2">
       </section>
 
     </div>
