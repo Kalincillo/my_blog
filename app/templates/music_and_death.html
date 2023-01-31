@@ -105,7 +105,7 @@
              class="img-frame project-img">
         <h3 class="mt-4">Merge dataframes</h3>
         <p class="mt-0">Now we have 2 dataframes one with the musicians information and one with the cities</p>
-        <img src="{{ url_for('static', filename='/images/projects/software/music_death/musician_inf.jpg') }}"
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/musician_inf.png') }}"
              class="img-frame project-img mt-2">
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/cities_inf.jpg') }}"
              class="img-frame project-img mt-4">
@@ -115,6 +115,9 @@
              class="img-frame project-img mt-2">
         <p>Now we can look at the two joined tables</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/joined.jpg') }}"
+             class="img-frame project-img mt-2">
+        <h5 class="mt-4">Convert to csv</h5>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/musician_csv.png') }}"
              class="img-frame project-img mt-2">
       </section>
       <section class="text-white mt-5">
@@ -135,13 +138,22 @@
         <h3 class="mt-4">Most common death ages</h3>
         <p>I create a series using the column death ages and then the method "value_counts" and only use the 10 most
           common values using the method "nlargest"</p>
-        <img src="{{ url_for('static', filename='/images/projects/software/music_death/death_ages.png') }}"
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/death_ages.jpg') }}"
              class="img-frame project-img mt-2">
         <p>Now plot with a pie chart</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/death_ages_pie.png') }}"
              class="img-frame project-img mt-2">
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/death_ages_pie_chart.png') }}"
              class="img-frame project-img mt-2">
+        <p>So far we can confirm that the theory of the 27 years is real</p>
+        <h3>Order music genre deaths</h3>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/genre_deaths.png') }}"
+             class="img-frame project-img mt-2">
+        <p>Plot</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/genre_deaths_2.png') }}"
+             class="img-frame project-img"><br>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_death/genre_deaths_3.png') }}"
+             class="img-frame project-img mt-4">
         <h3 class="mt-4">Most common countries of origin of dead musicians</h3>
         <p>We use "value_counts" and "nlargest" again but this time with the Country column.</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/country_origin.png') }}"
@@ -157,13 +169,15 @@
              class="img-frame project-img mt-2">
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/state_origin_2.png') }}"
              class="img-frame project-img mt-2">
-        <h3 class="mt-4">Most common states of origin of dead musicians</h3>
+        <p>we will use the uk as country and england, wales, scotland and northern ireland as states as most of the
+          musicians are in the us and we want there to be more balance</p>
+        <h3 class="mt-4">Most common cities of origin of dead musicians</h3>
         <p>The same process is done for the city and with which we obtain</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/city_origin.png') }}"
              class="img-frame project-img mt-2">
         <h1 class="mt-5">Causes</h1>
         <p class="mt-0">Now we will see the main causes of death in each musical genre</p>
-        <p>First we create a new dataframe using the genre, cause columns and use the value_counts method to count the
+        <p>First we create a new series using the genre, cause columns and use the value_counts method to count the
           total deaths for each.</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/cause_genre.png') }}"
              class="img-frame project-img mt-2">
@@ -204,9 +218,33 @@
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/common_causes_bar.png') }}"
              class="img-frame project-img mt-2">
       </section>
-
+      <section>
+        <h3 class="mt-4">Files</h3>
+        <table class="table table-dark table-striped">
+          <thead>
+          <tr>
+            <th>File</th>
+            <th>Download</th>
+            <th>Size</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>music_and_death.ipynb</td>
+            <td>
+              <a
+                class="btn btn-primary m-1"
+                href="{{ url_for('static', filename='files/projects/software/music_and_death/music_and_death.ipynb') }}"
+                download
+                role="button"><i class="fa fa-file-download"></i>
+              </a>
+            </td>
+            <td>393 KB</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
     </div>
-
   </div>
 
 {% endblock %}
