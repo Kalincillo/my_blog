@@ -7,7 +7,7 @@
       <h1 class="display-2">Music & Death</h1>
       <h3 class="mt-4">Repository Github</h3>
       <p><a href="https://github.com/Kalincillo/data_science_music_and_death" class="text-info" target="_blank">
-        Restaurant finder</a></p>
+        Music & Death</a></p>
       <section>
         <h3 class="mt-2">Objective</h3>
         <p class="mt-0">The main objective of this research is to investigate if there is any relationship between being
@@ -122,11 +122,11 @@
       </section>
       <section class="text-white mt-5">
         <h1 class="text-center">Questions</h1>
-        <p>Today I have gathered information from more than 500 musicians which I will continue to update, meanwhile I
+        <p>Today I have gathered information from more than 700 musicians which I will continue to update, meanwhile I
           will proceed to answer key questions and we will be able to observe how they change as more people are
           added.
         </p>
-        <h3>Total deaths form 50's to 2020's</h3>
+        <h3>Total deaths from 50's to 2020's</h3>
         <p class="mt-0">We will create a new dataframe using the pandas function "pivot_table" and divide them by
           musical genre to
           see who has the most deaths so far.</p>
@@ -136,7 +136,7 @@
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/total_deaths_2.png') }}"
              class="img-frame project-img mt-2">
         <h3 class="mt-4">Most common death ages</h3>
-        <p>I create a series using the column death ages and then the method "value_counts" and only use the 10 most
+        <p class="mt-0">I create a series using the column death ages and then the method "value_counts" and only use the 10 most
           common values using the method "nlargest"</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/death_ages.jpg') }}"
              class="img-frame project-img mt-2">
@@ -146,7 +146,7 @@
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/death_ages_pie_chart.png') }}"
              class="img-frame project-img mt-2">
         <p>So far we can confirm that the theory of the 27 years is real</p>
-        <h3>Order music genre deaths</h3>
+        <h3>Most common Music Genre deaths</h3>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/genre_deaths.png') }}"
              class="img-frame project-img mt-2">
         <p>Plot</p>
@@ -155,7 +155,7 @@
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/genre_deaths_3.png') }}"
              class="img-frame project-img mt-4">
         <h3 class="mt-4">Most common countries of origin of dead musicians</h3>
-        <p>We use "value_counts" and "nlargest" again but this time with the Country column.</p>
+        <p class="mt-0">We use "value_counts" and "nlargest" again but this time with the Country column.</p>
         <img src="{{ url_for('static', filename='/images/projects/software/music_death/country_origin.png') }}"
              class="img-frame project-img mt-2">
         <p>Now we plot the data with an horizontal bar</p>
