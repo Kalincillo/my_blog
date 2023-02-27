@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container text-white">
+    <div class="row">
+      <h1 class="display-2">Music & Death Power BI Visualization</h1>
+      <h3 class="mt-4">Repository Github</h3>
+      <p><a href="https://github.com/Kalincillo/music_death_power_BI" class="text-info" target="_blank">
+        Music & Death Power BI</a></p>
+      <section>
+        <h3 class="mt-2">Objective</h3>
+        <p class="mt-0">Analyze the data previously generated in the music and death project in a .csv file using the
+          Microsoft Power BI tool</p>
+        <h5>Glimpse</h5>
+        <p class="mt-0">After loading the data we can observe multiple graphs interactively</p>
+        <img src="{{ url_for('static', filename='/images/projects/software/music_and_death_power/glimpse.jpg') }}"
+             class="img-frame project-img mt-3">
+      </section>
+    </div>
+  </div>
+
+{% endblock %}

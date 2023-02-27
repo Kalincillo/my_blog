@@ -73,3 +73,8 @@ def burger():
 @main.route('/strength')
 def strength():
     return render_template('strength.html')
+
+@main.route('/music_and_death_power_bi')
+def music_and_death_power_bi():
+    return render_template('music_and_death_power_bi.html')
+
